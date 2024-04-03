@@ -1,0 +1,23 @@
+#first-paragraph {
+    color: darkslategrey;
+    background-color:burlywood;
+    font-style: italic;
+    text-align:right
+}
+
+#second-paragraph {
+    color:darkolivegreen;
+    font-size: 20px;
+    text-decoration:line-through;
+    text-decoration-color:darkgoldenrod;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#s1 {
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+}
