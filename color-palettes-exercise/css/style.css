@@ -1,6 +1,7 @@
 #head1 {
     font-family:'Times New Roman', Times, serif;
     text-align:center;
+    font-weight: bold;
 }
 #c1 {
     background-color:#2D5E7D;
@@ -23,6 +24,7 @@
 #head2 {
     font-family:'Times New Roman', Times, serif;
     text-align:center;
+    font-weight: bold;
 }
 #c4 {
     background-color:#fffbb8;
@@ -42,9 +44,16 @@
     padding: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#c6-5 {
+    background-color:#ffbbdb;
+    text-align:center;
+    padding: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 #head3 {
     font-family:'Times New Roman', Times, serif;
     text-align:center;
+    font-weight: bold;
 }
 #c7 {
     background-color:#2f00ff;
