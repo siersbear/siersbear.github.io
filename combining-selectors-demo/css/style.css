@@ -1,0 +1,35 @@
+#navbar {
+    background-color: burlywood;
+    text-align: center;
+    padding: 24px;
+}
+#navbar a {
+    color: rgb(114, 72, 72);
+    text-decoration: none;
+}
+p a {
+    color: burlywood;
+}
+p.warning{
+    color: rgb(197, 0, 0);
+}
+
+p.warning a {
+    color: rgb(114, 72, 72);
+}
+
+ul {
+    color: rgb(61, 120, 61);
+}
+
+ul a {
+    color: rgb(35, 122, 35);
+}
+
+ul p a {
+    color: rgb(84, 167, 84);
+}
+
+ul div a {
+    color: rgb(28, 80, 28);
+}
