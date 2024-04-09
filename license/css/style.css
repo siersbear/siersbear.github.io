@@ -1,0 +1,97 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Generic License assignment.
+
+    Good luck, and have fun!
+*/
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    line-height: 0px;
+}
+h4 {
+    color: white;
+    background-color: darkblue;
+    padding: 8px;
+    font-weight: bolder;
+}
+#license {
+    background: linear-gradient(to right, #fdcb73,#ee8f51);
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    color: darkblue;
+    padding: 3%;
+    border-radius: 25px;
+    box-shadow: 30%;
+}
+#id-and-expiration {
+    line-height: 30px;
+}
+span {
+    color: red;
+    font-weight: bold;
+}
+.fa-solid.fa-star {
+    color: white;
+    background-color: #ffd700;
+    padding: 5%;
+    border-radius: 45px;
+}
+.container1 {
+    color: black;
+    font-weight: bold;
+}
+.container2 {
+    text-align: left;
+}
+.container3 {
+    text-align: left;
+}
+.container4 {
+    text-align: left;
+}
+.container5 {
+    text-align: right;
+}
+.container6 {
+    display: inline-block;
+    text-align: center;
+}
+.container3 #small-pic {
+    opacity: 50%;
+    width: 10px;
+    display: inline-block;
+}
+#mii-id {
+    width: 70px;
+    height: 70px;
+}
+h4 {
+    text-align: center;
+}
+#id-and-expiration div {
+    display: inline-block;
+}
+#data-left,
+#data-right {
+    display: inline-block;
+}
+#signature {
+    font-family: cursive;
+    color: black;
+    text-align: center;
+}
+#mii-id2 {
+    width: 130px;
+    height: 130px;
+}
+#donor {
+    color: red;
+    font-weight: bold;
+}
+#donor-and-real-id {
+    display: inline-block;
+}
+
