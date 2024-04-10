@@ -6,12 +6,13 @@
 
     Good luck, and have fun!
 */
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 
 #license {
-    border: 2px solid black;
+    border: 2px solid #602037;
     border-radius: 15px;
     background: 
-        linear-gradient(to bottom right, #fdca72,#ee8f50)
+        linear-gradient(to top right, #ff99c0,#ffe77c)
     ;
     padding: 24px;
     width: 700px;
@@ -21,7 +22,7 @@
 }
 h1 {
     font-size: 60px;
-    color: navy;
+    color: #6670ff;
     margin: 0px;
 }
 #right-side, #left-side {
@@ -36,7 +37,7 @@ h1 {
 }
 h4 {
     text-align: center;
-    background-color: darkblue;
+    background-color: #6670ff;
     color: white;
     padding: 8px;
     font-size: 24px;
@@ -44,15 +45,18 @@ h4 {
 }
 #id-and-expiration div {
     display: inline-block;
-    color: navy;
+    color: #6670ff;
     margin: 8px;
 }
 #id-and-expiration span {
-    color: red;
+    color: #ae426a;
     font-weight: bold;
 }
 #address {
     font-weight: bold;
+    font-size: 18px;
+    margin: 9px;
+    color: #313568;
 }
 #small-pic, #data-fields {
     display: inline-block;
@@ -64,21 +68,24 @@ h4 {
 }
 #data-left, #data-right {
     display: inline-block;
-    color: navy;
+    color: #6670ff;
     margin: 8px;
 }
 #signature {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
+    font-family: "Ms Madi";
+    color: #313568;
 }
 #data-left span,
 #data-right span {
-    color: red;
+    color: #ae426a;
     font-weight: bold;
 }
 #right-side img {
     width: 100%;
+    height: 225px;
 }
 #donor-and-real-id {
     text-align: center;
@@ -87,18 +94,18 @@ h4 {
 #donor-and-real-id div {
     display: inline-block;
     padding: 5px;
-    color: red;
+    color: #ae426a;
     font-weight: bold;
 }
 #donor {
-    color: red;
+    color: #ae426a;
     font-family: sans-serif;
     font-weight: bold;
     padding-right: 24px;
 }
 #real-id {
     display: inline-block;
-    background-color: gold;
+    background-color: #ffe77c;
     border-radius: 50%;
     font-size: 24px;
     text-align: center;
