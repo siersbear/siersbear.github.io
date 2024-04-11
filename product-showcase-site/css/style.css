@@ -35,6 +35,16 @@ body {
     padding: 48px 0px;
     color: #292125;
 }
+.single-column h1 {
+    background-color: #f6dde7;
+    border-style:dotted;
+    border-width: 5px;
+}
+.container-2 h1 {
+    background-color: #e3b9ca;
+    border-style:dotted;
+    border-width: 5px;
+}
 h3 {
     color: #f6dde7;
     background-color: #292125;
@@ -42,6 +52,7 @@ h3 {
     border-radius: 5%;
     text-align: center;
     padding: 10px;
+    text-decoration: none;
 }
 img {
     width: 100%;
@@ -72,4 +83,10 @@ img {
 .right-3 {
     vertical-align: top;
     padding: 55px;
+}
+.description {
+    font-weight: bold;
+}
+.price sub {
+    font-style: italic;
 }
