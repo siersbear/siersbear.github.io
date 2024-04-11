@@ -10,6 +10,7 @@ body {
     color: #f6dde7;
     background-color: #292125;
     padding: 48px 0px;
+    font-family: cursive;
 }
 .single-column {
     width: 50%;
@@ -17,6 +18,7 @@ body {
     margin-left: auto;
     margin: 0px auto;
     vertical-align: top;
+    font-family: 'Times New Roman', Times, serif;
 }
 .container-1 {
     background-color: #695e64;
@@ -53,4 +55,21 @@ img {
 }
 .right-1 {
     vertical-align: top;
+    padding: 55px;
+}
+.left-2, .right-2 {
+    display: inline-block;
+    width: 48%;
+}
+.right-2 {
+    vertical-align: top;
+    padding: 55px;
+}
+.left-3, .right-3 {
+    display: inline-block;
+    width: 48%;
+}
+.right-3 {
+    vertical-align: top;
+    padding: 55px;
 }
