@@ -5,6 +5,9 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.contents{
     color: #e3b9ca;
 }
 body {
@@ -49,7 +52,7 @@ body {
     text-decoration: none;
 }
 #sidebar ul li {
-    padding: 4px 0px;
+    padding: 10px 0px;
 }
 #main-content {
     background-color: #f6dde7;
