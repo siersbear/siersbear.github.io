@@ -1,10 +1,13 @@
 * {
     box-sizing: border-box;
 }
+#grid-layout {
+    background:linear-gradient(rgb(36, 32, 32),rgb(255, 223, 223));
+}
 body {
     margin: 0px;
-    font-family: sans-serif;
-
+    font-family: didot;
+    color: rgb(255, 187, 193);
 }
 #grid-layout {
     display: grid;
@@ -22,13 +25,16 @@ body {
     text-decoration: none;
 }
 #header #me {
-    color: rgb(48, 37, 38);
+    color: rgb(255, 208, 212);
 }
 #header #tube {
     background: linear-gradient(rgb(89, 71, 74),rgb(255, 171, 171));
     color: white;
     padding: 4px;
     border-radius: 12px;;
+}
+.video-channel {
+    font-weight:bolder;
 }
 #sidebar {
     grid-area: sidebar;
@@ -42,7 +48,7 @@ body {
 }
 #sidebar ul a {
     text-decoration: none;
-    color: rgb(89, 71, 74);
+    color: rgb(255, 223, 223);
     padding: 12px;
     display: block;
 }
@@ -68,7 +74,7 @@ body {
 }
 .metube-item h4 a {
     text-decoration: none;
-    color: rgb(48, 37, 38);
+    color: rgb(255, 223, 223);
     display: block;
 }
 .metube-item h4 a:hover {
@@ -88,7 +94,33 @@ body {
     display: block;
     border-radius: 8px;
 }
+#m1 .thumbnail-placeholder img {
+    background-image: url(../images/Screenshot2024-04-15at10.34.29PM.png);
+    background-size: cover;
+    border: 2px solid rgb(255, 171, 171);
+}
 #m2 .thumbnail-placeholder img {
+    background-image: url(../images/Screenshot2024-04-15at10.32.08PM.png);
+    background-size: cover;
+    border: 2px solid rgb(255, 171, 171);
+}
+#m3 .thumbnail-placeholder img {
+    background-image: url(../images/Screenshot2024-04-15at10.29.26PM.png);
+    background-size: cover;
+    border: 2px solid rgb(255, 171, 171);
+}
+#m4 .thumbnail-placeholder img {
+    background-image: url(../images/Screenshot2024-04-15at10.27.13PM.png);
+    background-size: cover;
+    border: 2px solid rgb(255, 171, 171);
+}
+#m5 .thumbnail-placeholder img {
+    background-image: url(../images/Screenshot2024-04-15at10.25.39PM.png);
+    background-size: cover;
+    border: 2px solid rgb(255, 171, 171);
+}
+#m6 .thumbnail-placeholder img {
     background-image: url(../images/IMG1.png);
     background-size: cover;
+    border: 2px solid rgb(255, 171, 171);
 }
