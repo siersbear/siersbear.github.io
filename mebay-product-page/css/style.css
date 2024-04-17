@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+h1 {
+    text-align: center;
+}
+#mebay-item {
+    display: flex;
+    flex-direction: row;
+}
+#mebay-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#bulksavings {
+    display: flex;
+    flex-direction: row;
+}
+#bulk {
+    padding-top: 20px;
+}
+.bulk {
+    border: 1px solid grey;
+    text-align: center;
+    margin: 5px;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+#sanxkoinu {
+    border: 1px solid grey;
+    width: 40%;
+    height: 30%;
+    padding: 25px;
+}
+#productinfo {
+    font-size: 12px;
+}
+#price {
+    font-weight: bolder;
+    font-size: 30px;
+    padding-right: 100px;
+}
+#price-id {
+    padding-top: 55px;
+}
+#price-buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+ul {
+    list-style-type: none;
+}
+#buttons {
+    display: flex;
+    /* padding: 50px 24px; */
+    text-decoration: none;
+}
+
+#buttons #buy a {
+    background-color:rgb(88, 107, 172);
+    /* padding: 5px; */
+    border: 1px solid rgb(88, 107, 172);
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+}
+#buttons #buy a:hover {
+    background-color:white;
+    /* padding: 5px; */
+    border: 1px solid rgb(88, 107, 172);
+    border-radius: 25px;
+    color: rgb(88, 107, 172);
+    text-decoration: underline;
+
+}
+#buttons #cart a {
+    background-color:rgb(137, 159, 229);
+    /* padding: 5px; */
+    border: 1px solid rgb(137, 159, 229);
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+}
+#buttons #cart a:hover {
+    background-color:white;
+    /* padding: 5px; */
+    border: 1px solid rgb(137, 159, 229);
+    border-radius: 25px;
+    color: rgb(137, 159, 229);
+    margin: 5px;
+    text-decoration: underline;
+}
+#buttons #wishlist a {
+    /* padding: 5px; */
+    border: 1px solid rgb(137, 159, 229);
+    border-radius: 25px;
+    color: rgb(137, 159, 229);
+    margin: 5px;
+    text-decoration: none;
+}
+#buttons #wishlist a:hover {
+    background-color:rgb(137, 159, 229);
+    /* padding: 5px; */
+    border: 1px solid rgb(137, 159, 229);
+    border-radius: 25px;
+    color: white;
+    margin: 5px;
+    text-decoration: underline;
+}
+#shipping {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+#service a {
+    color:rgb(88, 107, 172);
+    text-decoration: none;
+}
+#shipping-text {
+    padding-right: 10px;
+}
+#shipping-info {
+    font-size: 12px;
+    padding-top: 5px;
+}
+#seller-information {
+    display: flex;
+    flex-direction: column;
+}
+#learnmore {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 20px;
+}
+#seller-info {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 20px;
+}
