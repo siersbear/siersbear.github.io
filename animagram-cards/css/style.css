@@ -1,0 +1,87 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+#card-container {
+    width: 90vw;
+    max-width: 300px;
+    margin: 48px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.card-style-2 {
+    width: 350px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.logo {
+    margin: auto;
+}
+.brand-name {
+    font-size: 25px;
+    padding-left: 130px;
+    font-weight: bolder;
+}
+.card-style-2 img {
+    display: block;
+    margin: 25px auto;
+    width: 60%;
+    height: 200px;
+    border-radius: 50%;
+}
+.card-style-2 h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    padding: 0px;
+}
+.card-style-2 p {
+    font-size: 17px;
+    flex: 1;
+    text-align: center;
+    margin-top: 0px;
+    padding: 30px;
+}
+.animagram-footer {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.heart {
+    padding-right: 30px;
+}
+.comment {
+margin: 5px;
+}
+.image {
+    padding-left: 30px;
+}
+.heart i:hover {
+    color: rgb(255, 116, 116);
+}
+.comment i:hover {
+    color: rgb(132, 143, 191);
+}
+.image i:hover {
+    color: rgb(132, 143, 191);
+}
+
