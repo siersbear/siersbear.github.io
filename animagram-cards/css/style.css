@@ -34,7 +34,7 @@ body {
     margin: 20px;
 }
 .logo {
-    margin: auto;
+    margin: auto 5px;
 }
 .brand-name {
     font-size: 28px;
