@@ -1,0 +1,74 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+* {
+    box-sizing: border-box;
+}
+.card-style-3 {
+    border: 15px solid rgb(255, 213, 0);
+    border-radius: 15px;
+    margin: 15px;
+    max-width: 360px;
+    min-width: 170px;
+    padding: 15px;
+    background-image: linear-gradient(to right,rgb(255, 247, 0),rgb(255, 217, 0),rgb(255, 247, 0));
+}
+.card-style-3 .pokemon-header {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+}
+.card-style-3 .health {
+    text-align: right;
+}
+img {
+    width: 100%;
+    border: 5px solid rgb(225, 185, 8);
+    margin: auto;
+}
+.details {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    margin: 0px 10px;
+    background-image: linear-gradient(45deg, rgb(225, 185, 8), rgb(255, 213, 0),rgb(225, 185, 8));
+}
+.attack {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+}
+.power {
+    font-weight: bold;
+    font-size: 20px;
+    padding: auto;
+}
+.card-style-3 .description {
+    font-size: 14px;
+    display: inline-block;
+}
+.bold {
+    font-weight: bold;
+    font-size: 17px;
+}
+.data {
+    font-size: 11px;
+    font-weight: bold;
+    border: 2px solid rgb(225, 185, 8);
+    padding: 5px;
+}
+hr { 
+    width: 100%; 
+    height: 1px; 
+    background: #000000;
+    padding: 1px;
+
+}
