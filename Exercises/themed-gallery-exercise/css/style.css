@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(rgb(255, 161, 161),rgb(244, 127, 127),rgb(255, 233, 187));
+}
+/*HERO*/
+#hero {
+    background-image: url("../images/STRAWBERRIES.jpg");
+    height:135vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+#hero h1 {
+    font-size: 8vw;
+    margin-bottom: 2vh;
+    margin-right: 5vw;
+    color:  rgb(227, 17, 17);
+    background-color: rgb(255, 233, 187);
+    border-radius: 35px 35px 5px 5px;
+    padding: 10px;
+}
+#hero h4 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.86vw;
+    font-weight: lighter;
+    margin: 0px 5vw 0px 0px;
+    color:  rgb(227, 17, 17);
+    background-color: rgb(255, 233, 187);
+    border-radius: 10px;
+    padding: 10px;
+}
+#hero a {
+    font-size: 3vw;
+    display: inline-block;
+    background-color: rgb(255, 161, 161);
+    border-radius: 55px;
+    color: rgb(215, 27, 27);
+    text-decoration: none;
+    padding: 25px;
+    margin: 4vh 5vw 10vh 0px;
+    font-weight: bold;
+    transition: 
+        background-color .5s,
+        color .5s;
+}
+#hero a:hover {
+    background-image: linear-gradient(rgb(215, 27, 27),rgb(255, 71, 71));
+    color: rgb(255, 233, 187);
+}
+/*COLUMNS*/
+#treats h3 {
+    text-align: center;
+    background-color: rgb(215, 27, 27);
+    color: rgb(255, 233, 187);
+    font-size: 5vw;
+}
+#treats .horizontal-masonry-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 35px;
+    margin: 25px;
+    background-color: rgb(255, 191, 191);
+    border: 10px solid rgb(215, 27, 27);
+}
+#treats .horizontal-masonry-gallery img {
+    height: 250px;
+    flex: 1;
+    object-fit: cover;
+}
