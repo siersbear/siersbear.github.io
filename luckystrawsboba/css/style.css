@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    color: white;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*HOMEPAGE*/
+.homepage {
+    background-color: #534598;
+    color: white;
+}
+/*BANNER*/
+#banner {
+    text-align: center;
+    background-color: #241f21;
+    padding: 30px;
+}
+#logo {
+    padding: 20px;
+    width: 30vw;
+}
+/*NAV BAR*/
+#NAV {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition:
+        ease-in .5s;
+}
+li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+/*HEADERS*/
+#headers {
+    padding: 45px;
+    text-align: center;
+    font-weight: light;
+    font-size: 20px;
+}
+/*REVIEWS*/
+#reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#review-1 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+    max-height: 200px;
+    max-width: 300px;
+}
+#review-2 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 35px;
+    max-height: 200px;
+    max-width: 300px;
+}
+#reviews p{
+    color: #534598;
+    margin: 5px 10px;
+}
+#reviews #bold {
+    font-weight: bolder;
+    font-size: 13px;
+}
+#reviews #small {
+    font-weight: thin;
+    font-size: 12px;
+}
+#reviews #google {
+    font-weight: thin;
+    font-size: 10px;
+}
+#review-1 img {
+    width: 500px;
+    height: 130px;
+}
+#review-2 img {
+    width: 300px;
+    height: 130px;
+}
+/*FOOTER*/
+#footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #241f21;
+}
+#footer img {
+    padding: 20px;
+}
+#footer #socials {
+    padding: 20px;
+}
+.footer-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#socials a {
+    color: white;
+    padding: 5px;
+}
+.icon {
+    padding: 5px;
+}
+/*DRINK MENU*/
+#menu {
+    background-image: url("../images/menubg.png");
+    background-size: 1550px;
+    font-weight: bold;
+}
+.middle-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.middle-text img {
+    width: 100vw;
+    padding: 50px 10px;;
+}
+ul li{
+    text-decoration: none;
+    padding: 10px;
+}
+#milk-tea h2 {
+    color: #ee1270;
+    justify-content: left;
+    padding-left: 40px;
+    font-size: 30px;
+}
+#flavored-tea h2 {
+    color: #ee1270;
+    justify-content: left;
+    padding-left: 40px;
+    font-size: 30px;
+}
+#menu h2 {
+    color: #534598;
+    justify-content: left;
+    padding-left: 40px;
+    font-size: 30px;
+}
+.drink-menu-top {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+
+}
+.drink-menu-bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+}
+.milk-tea-list, .price{
+    display: flex;
+    flex-direction: row;
+    justify-content:center
+}
+.milk-tea-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ee1270;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px;
+}
+.flavored-tea-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ee1270;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px;
+}
+.smooth-tea-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #534598;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px;
+}
+.slush-tea-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #534598;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px;
+}
+.star {
+    color: yellow;
+}
+.special {
+    display: flex;
+    flex-direction: row;
+}
+#milk-tea .price p {
+    padding: 20px;
+    background-image: url("../images/pricetag2.png");
+    background-size: 75px;
+    background-repeat:no-repeat;
+}
+#flavored-tea .price p {
+    padding: 20px;
+    background-image: url("../images/pricetag2.png");
+    background-size: 75px;
+    background-repeat:no-repeat;
+}
+#smooth-tea .price p {
+    padding: 20px;
+    background-image: url("../images/pricetag.png");
+    background-size: 75px;
+    background-repeat:no-repeat;
+}
+#slush-tea .price p {
+    padding: 20px;
+    background-image: url("../images/pricetag.png");
+    background-size: 75px;
+    background-repeat:no-repeat;
+}
+/*DIRECTIONS*/
+#directions {
+    background-color: #534598;
+    color: white;
+}
+.italic {
+    font-style: italic;
+}
+#topleft {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+
+}
+#topleft p{
+    padding: 5px 0px;
+}
+#learnmore a{
+    background-color: #aea7db;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 
+        background-color .5s,
+        color .3s;
+
+}
+#learnmore a:hover{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: #aea7db;
+}
+.building-img {
+    width: 30vw;
+}
+#topleft, #topright {
+    justify-content: space-around;
+    padding: 95px 80px;
+}
+#topsidebyside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#map {
+    width: 30vw;
+    padding: 20px 80px;
+}
+#bottomcolumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#location-and-hours {
+    width: 400px;
+    padding-left: 100px;
+}
+#schedule {
+    display: flex;
+    flex-direction: row;
+}
+.day, .times {
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 20px;
+}
+.day {
+    font-size: 15px;
+    color: #241f21;
+    background-color: #aea7db;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.times {
+    font-size: 10px;
+}
+#links a{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: white;
+    transition: 
+        text-decoration .5s,
+        color .3s;
+}
+#links a:hover{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    text-decoration: underline;
+    color: #aea7db;
+}
+.left-side {
+    flex: 1;
+}
+.right-side {
+    flex: 2;
+}
+.left-side, .right-side{
+    display: flexbox;
+    gap: 10px;
+}
+/*CONTACT INFO*/
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    background-color: #534598;
+    color: white;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+  
+input[type=submit] {
+    background-color: #aea7db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 
+        background-color .5s,
+        border .3s;
+}
+  
+input[type=submit]:hover {
+    background-color: #534598;
+    border: 2px solid #aea7db;
+    padding: 12px 20px;
+}
+  
+.container {
+    border-radius: 5px;
+    margin: 0px 450px;
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#contact-us {
+    background-color: #534598;
+    color: white;
+}
+.disclaimer {
+    font-size: 10px;
+}
