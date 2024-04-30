@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+/*SCULPTORS HAVEN*/
+#logo {
+    display: flex;
+}
+#sh-navbar #logo p{
+    padding-top: 23px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #FBF2CF;
+}
+#sh-navbar {
+    background: linear-gradient(
+        to bottom,
+        #F6DACF,
+        #879CD0
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sh-navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+}
+#sh-navbar img {
+    width: 100px;
+}
+#sh-navbar #logo {
+    margin-right: auto;
+}
+#sh-navbar .cta-button {
+    background-color: #FBF2CF;
+    color:  #879CD0;
+    border-radius: 36px;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+    margin-right: 25px;
+}
+#layout {
+    width: 800px;
+    margin: 48px auto;
+    font-size: 24px;
+    height: 200vh;
+}
+#header {
+    position: sticky;
+    top: 0px;
+}
+#sh-navbar-bottom {
+    background: linear-gradient(
+        to bottom,
+        #5875B9,
+        #879CD0
+    );
+    display: flex;
+    justify-content: space-between;
+}
+#sh-navbar-bottom a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 36px;
+}
+/*ANGEL EARS*/
+#ae-navbar #Name p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #3D2C34;
+    padding: 5px 20px;
+}
+#ae-navbar {
+    background: linear-gradient(
+        to bottom,
+        #446684,
+        #7A8C8A,
+        #FAF4E2
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ae-navbar a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #FAF4E2;
+    padding: 9px 0px;
+    margin-right: 24px;
+}
+
+#ae-navbar .cta-button {
+    background-color: #3D2C34;
+    color:  #FAF4E2;
+    border-radius: 36px;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+    margin-right: 24px;
+}
+#ae-navbar-bottom {
+    display: flex;
+    justify-content: center;
+}
+#ae-navbar-bottom #ae-logo{
+    width: 40px;
+    margin: 5px;
+}
+#layout {
+    width: 800px;
+    margin: 40px auto;
+    font-size: 24px;
+    height: 200vh;
+}
+#header {
+    position: sticky;
+    top: 0px;
+}
+#ae-navbar-bottom {
+    background: linear-gradient(
+        to bottom,
+        #996641,
+        #AF8B52
+    );
+}
+#ae-navbar-bottom a{
+    text-decoration: none;
+    color: #3D2C34;
+    padding: 12px 36px;
+}
+/*TAILOREDSPOOKS*/
+#ts-navbar {
+    background: linear-gradient(
+        to right,
+        #F36D21,
+        #c34e0a
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ts-navbar a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #DCC8D8;
+    padding: 24px;
+}
+#logo {
+    display: flex;
+}
+#ts-navbar img {
+    width: 100px;
+}
+.ts-text{
+    padding-top: 13px;
+    font-weight: bold;
+    font-size: 26px;
+    color:  #3D2C34;
+}
+#ts-navbar #logo {
+    margin-right: auto;
+}
+#ts-navbar .cta-button {
+    background-color: #432A5B;
+    color:  #DCC8D8;
+    border-radius: 36px;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+    margin-right: 24px;
+}
+#layout {
+    width: 800px;
+    margin: 48px auto;
+    font-size: 24px;
+    height: 200vh;
+}
+#header {
+    position: sticky;
+    top: 0px;
+}
+#ts-navbar-top {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(
+        to top,
+        #432A5B,
+        #7A51A1
+    );
+    display: flex;
+    justify-content: center;
+}
+#ts-navbar-top p{
+    text-decoration: none;
+    color: #DCC8D8;
+    padding: 5px 36px;
+}
+#ts-navbar-bottom {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(
+        to bottom,
+        #432A5B,
+        #7A51A1
+    );
+    display: flex;
+    justify-content: center;
+}
+#ts-navbar-bottom a{
+    text-decoration: none;
+    text-align: center;
+    color: #DCC8D8;
+    padding: 5px 36px;
+    margin: 5px;
+}
