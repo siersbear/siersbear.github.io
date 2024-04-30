@@ -8,8 +8,8 @@ body {
 #navbar {
     background: linear-gradient(
         to bottom,
-        rgb(82, 59, 59),
-        rgb(110, 99, 90)
+        #7C1E5F,
+        #69164f
     );
     display: flex;
     justify-content: space-between;
@@ -19,4 +19,30 @@ body {
     text-decoration: none;
     color: white;
     padding: 24px;
+}
+#navbar img {
+    width: 200px;
+}
+#navbar #logo {
+    margin-right: auto;
+}
+#navbar .cta-button {
+    background-color: white;
+    color:  #4AAAD0;;
+    border-radius: 36px;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+    margin-right: 24px;
+}
+#layout {
+    width: 800px;
+    margin: 48px auto;
+    font-size: 24px;
+    height: 200vh;
+}
+#navbar {
+    position: fixed;
 }
