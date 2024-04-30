@@ -309,6 +309,7 @@ ul li{
 #location-and-hours {
     width: 400px;
     padding-left: 100px;
+    margin: 20px;
 }
 #schedule {
     display: flex;
