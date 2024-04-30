@@ -16,8 +16,8 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.box {
-    width: 50%;
+#container-8 .box {
+    flex: 100;
 }
 #c7-item2 {
     flex: 1;
@@ -36,12 +36,12 @@
     align-items: center;
 }
 #c9-box2 {
-    width: 280vw;
+    flex: 100;
 }
 /* Drill 10 - Write your code solution below */
 #container-10 {
     display: flex;
 }
 #c10-box1 {
-    width: 290%;
+    flex: 100;
 }
