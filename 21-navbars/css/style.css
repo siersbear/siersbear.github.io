@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+#navbar {
+    background: linear-gradient(
+        to bottom,
+        rgb(82, 59, 59),
+        rgb(110, 99, 90)
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+}
