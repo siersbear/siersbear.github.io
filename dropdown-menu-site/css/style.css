@@ -5,6 +5,7 @@ body {
     margin: 0px;
     font-family: sans-serif;
 }
+/*Struggling to fit background image size*/
 #layout {
     background-image: url("../images/SITEBG.png");
     background-size: cover;
@@ -98,6 +99,7 @@ body {
 }
 #hero {
     background-image: url("../images/dog4.jpg");
+    background-repeat: no-repeat;
     height:135vh;
     background-size: 100%;
     background-position: top;
@@ -185,4 +187,12 @@ body {
     padding: 10px;
     margin: 0px 60px;
 }
+/*MEDIA QUERIES*/
+/*TABLET MEDIA QUERY*/
+@media screen and (max-width: 768px) and (min-width: 481px) { 
 
+}
+/*CELL PHONE MEDIA QUERY*/
+@media screen and (max-width: 480px) {
+
+}
