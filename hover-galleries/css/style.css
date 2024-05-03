@@ -112,12 +112,14 @@ body {
     ;
 }
 #card-container1 #card2:hover {
-    background-color:rgb(245, 220, 228);
-    box-shadow: 5px 5px 5px rgb(111, 66, 83);
+    background-color:rgb(111, 66, 83);
+    box-shadow: 5px 5px 5px rgba(111, 66, 83, 0.744);
     transform: translateY(-4px);
 }
 #card-container1 #card2 a:hover { 
-    color: white;
+    color: rgb(60, 28, 40);
+    border: 2px solid rgb(245, 220, 228);
+    background-color:rgb(245, 220, 228);
 }
 #card-container1 #card3 {
     transition:
