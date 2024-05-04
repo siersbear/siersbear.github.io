@@ -56,12 +56,13 @@ body {
     padding: 15px 10px;
 }
 /*DROPDOWN BUTTON*/
+/*struggling with background color*/
 .dropbtn {
     color: black;
+    padding: 0px 20px;
     font-size: 16px;
+    font-size: 20px;
     display: flex;
-    align-items: center;
-
 }
 .dropbtn:hover {
     color: #c47c34;
@@ -72,7 +73,6 @@ body {
 }
 .dropdown {
     position: relative;
-    padding: 15px;
 }
 .dropdown-content {
     position: absolute;
@@ -318,7 +318,7 @@ body {
         align-items: center;
     }
     #hero h1 {
-        font-size: 7vw;
+        font-size: 6vw;
         color: black;
     }
     #hero h4 {
