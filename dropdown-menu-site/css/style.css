@@ -4,13 +4,11 @@
 body {
     margin: 0px;
     font-family: sans-serif;
-}
-/*Struggling to fit background image size*/
-#layout {
     background-image: url("../images/SITEBG.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 .dog-container {
     justify-content: center;
@@ -19,7 +17,6 @@ body {
 }
 /*NAVBAR*/
 #header {
-    position: sticky;
     top: 0px;
 }
 #navbar {
@@ -35,6 +32,9 @@ body {
     color: black;
     padding: 0px 20px;
     font-size: 20px;
+}
+#navbar .links a:hover {
+    color: #c47c34;
 }
 #navbar #logo {
     margin-right: auto;
@@ -64,19 +64,20 @@ body {
     font-size: 20px;
     display: flex;
 }
+.dropbtn:hover {
+    color: #c47c34;
+}
 .fa-solid {
     padding-top: 2px;
     padding-left: 5px;
 }
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #e7b88c;
-    min-width: 160px;
+    background-color: #f1cdab;
 }
 .dropdown-content a {
     color: black;
@@ -84,14 +85,17 @@ body {
     display: block;
 }
 .dropdown-content a:hover {
+    color: black;
     background-color: #c47c34;
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
-#goldie, #max, #cici {
-    text-align: left;
-    margin: 15px;
+#goldie {
+    padding: 30px;
+}
+.dog {
+    padding: 30px;
 }
 /*HERO*/
 .spacer {
@@ -100,7 +104,7 @@ body {
 #hero {
     background-image: url("../images/dog4.jpg");
     background-repeat: no-repeat;
-    height:135vh;
+    min-height: 100vh;
     background-size: 100%;
     background-position: top;
     display: flex;
@@ -176,7 +180,7 @@ body {
 .single-column h1 {
     font-size: 50px;
     margin: 30px 0px 10px;
-    padding: 5px;
+    padding: 30px 0px 0px;
 }
 .single-column img {
     width: 40vw;
@@ -189,10 +193,188 @@ body {
 }
 /*MEDIA QUERIES*/
 /*TABLET MEDIA QUERY*/
-@media screen and (max-width: 768px) and (min-width: 481px) { 
-
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    /*HOMEPAGE*/ 
+    #navbar {
+        border-bottom: 5px solid black;
+    }
+    #navbar .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+    }
+    .dropbtn {
+        font-size: 17px;
+    }
+    #navbar a {
+        font-size: 16px;
+    }
+    #logo #sheltername {
+        color: black;
+        font-size: 30px;
+    }
+    .paw {
+        width: 60px;
+        height: 70px;
+        padding: 15px 10px;
+    }
+    .spacer {
+        height: 80vh;
+    }
+    #hero {
+        background-image: url("../images/dog4.jpg");
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .single-column img {
+        width: 450px;
+        padding: 5px;
+        margin: 0px;
+    }
 }
 /*CELL PHONE MEDIA QUERY*/
 @media screen and (max-width: 480px) {
-
+    #navbar {
+        background-color: #e7b88c;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: bold;
+        border-bottom: 5px solid black;
+    }
+    #navbar #logo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+        margin-left: auto;
+    }
+    #navbar .links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .dropbtn {
+        font-size: 16px;
+        padding-left: 35px;
+    }
+    .fa-solid {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .dropdown-content {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #navbar a {
+        font-size: 16px;
+        padding: 15px 0px;
+    }
+    #logo #sheltername {
+        color: black;
+        font-size: 30px;
+    }
+    .paw {
+        width: 60px;
+        height: 70px;
+        padding: 15px 10px;
+    }
+    .spacer {
+        height: 80vh;
+    }
+    /*HERO*/
+    #hero {
+        background-image: url("../images/dog4.jpg");
+        background-repeat: no-repeat;
+        background-size: 290%;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero {
+        background-image: url("../images/dog4.jpg");
+        background-repeat: no-repeat;
+        height:135vh;
+        background-size: 290%;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero h1 {
+        font-size: 7vw;
+        color: black;
+    }
+    #hero h4 {
+        font-family: sans-serif;
+        font-size: 4vw;
+        color: black;
+    }
+    #hero-text {
+        background-color: #f5f0eac9;
+        border-radius: 40px;
+        padding: 40px;
+        text-align: center;
+        margin: 30px;
+    }
+    #hero a {
+        font-size: 4vw;
+        display: inline-block;
+        background-color: #e7b88c;
+        border-radius: 60px;
+        color: black;
+        text-decoration: none;
+        padding: 30px;
+        margin: 10px;
+        font-weight: bold;
+        transition:
+            background-color .5s,
+            transform .3s;
+        ;
+    }
+    #hero a:hover {
+        background-color: #c47c34;
+        color: #f5f0ea;
+        transform: translateY(-4px);
+    }
+    /*DOG CONTAINER*/
+    .single-column {
+        display: block;
+        width: 50%;
+        border-radius: 50px;
+        min-width: 330px;
+        margin: 0px auto;
+        background-color: #faf8f5c9;
+    }
+    .single-column h1 {
+        font-size: 40px;
+        margin: 30px 0px 10px;
+        padding: 30px 0px 0px 0px;
+    }
+    .single-column img {
+        width: 250px;
+        padding: 5px;
+        margin: 0px;
+    }
+    .single-column #bio {
+        padding: 10px;
+        margin: 0px 20px;
+    }
+    #button a {
+        font-size: 3vw;
+    }
 }
