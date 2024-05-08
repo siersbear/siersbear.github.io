@@ -43,7 +43,7 @@ HOMEPAGE
 }
 /*DROPDOWN*/
 .dropbtn {
-    background-color: #04AA6D;
+    background-color:  #A880B4;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -56,9 +56,8 @@ HOMEPAGE
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #ECB06E;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 .dropdown-content a {
@@ -68,13 +67,13 @@ HOMEPAGE
     display: block;
 }
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color:  #A880B4;
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color:  #A880B4;
 }
 /*FOOTER*/
 #footer {
@@ -101,7 +100,7 @@ HOMEPAGE
 .coverimage {
     object-fit: cover;
     width: 100vw;
-    height: 20vh;
+    height: 40vh;
 }
 /*HERO*/
 #hero {
@@ -132,6 +131,13 @@ HOMEPAGE
     text-decoration: none;
     padding: 25px;
     font-weight: bold;
+    transition: 
+        background-color .5s
+    ;
+}
+#hero a:hover {
+    background-color: #A880B4;
+    color: #ECB06E;
 }
 /*CARD*/
 #centered-column {
@@ -143,8 +149,8 @@ HOMEPAGE
     justify-content: center;
 }
 .card {
-        text-align: center;
-    width: 350px;
+    text-align: center;
+    width: 450px;
     border: 2px solid #354E88;
     border-radius: 5px;
     padding: 10px;
@@ -161,13 +167,15 @@ HOMEPAGE
     font-size: 36px;
     margin-top: 12px;
     margin-bottom: 0px;
+    color: #ECB06E;
 }
 .card p{
     font-size: 18px;
     flex: 1;
+    color: #ECB06E;
 }
 .card a {
-    color: black;
+    color: #354E88;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -182,8 +190,9 @@ HOMEPAGE
         color .5s;
 }
 .card a:hover {
-    background-color: transparent;
-    border: 3px solid #ECB06E;
+    color:#ECB06E;
+    background-color: #A880B4;
+    border: 3px solid #A880B4;
 }
 /*****************************************************************************
 ABOUT US
