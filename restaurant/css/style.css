@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FEF2E3;
+}
+/**************************************************b***************************
+HOMEPAGE
+******************************************************************************/
+/*NAV*/
+#navbar-top {
+    display: flex;
+    justify-content: center;
+    background-color: #354E88;
+    margin: 0px;
+    padding: 0px;
+}
+#logo img {
+    width: 25vh;
+    padding: 10px;
+}
+#navbar-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ECB06E;
+    padding: 10px;
+}
+#navbar-bottom a{
+    color:  #354E88;
+    text-decoration: none;
+    transition:
+        text-decoration .5s,
+        font-weight .25s
+    ;
+}
+#navbar-bottom a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*FOOTER*/
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+#footer .social-media {
+    background-color: #354E88;
+    grid-column: auto;
+    columns: 3;
+    padding: 20px 15px;
+    text-align: center;
+    list-style-type: none;
+}
+.social-media li {
+    padding: 5px 0px;
+}
+#footer a{
+    color:  #ECB06E;
+    text-decoration: none;
+}
+/*IMAGE*/
+.coverimage {
+    object-fit: cover;
+    width: 100vw;
+    height: 20vh;
+}
+/*HERO*/
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero h1 {
+    font-size: 8vw;
+    margin-bottom: 2vh;
+    color: #A880B4;
+}
+#hero p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5vw;
+    margin: 0px 55px;
+    color: #354E88;
+    text-align: center;
+}
+#hero a {
+    font-size: 2vw;
+    display: inline-block;
+    margin: 25px 0px;
+    background-color: #ECB06E;
+    border-radius: 50px;
+    color: #354E88;
+    text-decoration: none;
+    padding: 25px;
+    font-weight: bold;
+}
+/*****************************************************************************
+ABOUT US
+******************************************************************************/
+
+/*****************************************************************************
+MENU
+******************************************************************************/
+
+/*****************************************************************************
+LOCATIONS
+******************************************************************************/
+
+/*****************************************************************************
+ORDER
+******************************************************************************/
