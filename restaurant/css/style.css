@@ -3,7 +3,7 @@
 }
 body {
     margin: 0px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: katari;
     background-color: #FEF2E3;
 }
 /**************************************************b***************************
@@ -100,8 +100,9 @@ HOMEPAGE
 /*FOOTER*/
 #footer {
     position: relative;
+    margin-bottom: -100px;
+    clear: both;
     bottom: 0;
-    top: 30rem;
 }
 #footer .social-media {
     background-color: #354E88;
@@ -110,6 +111,7 @@ HOMEPAGE
     padding: 20px 15px;
     text-align: center;
     list-style-type: none;
+    margin: 0;
 }
 .social-media li {
     padding: 5px 0px;
@@ -254,20 +256,29 @@ MENU
 }
 #column-list ul{
     list-style-type: none;
+    margin-right: 20px;
 }
 #column-list a{
     text-decoration: none;
     color: #354E88;
     padding: 3px;
+    transition:
+        color .25s
+    ;
+}
+#column-list a:hover {
+    color: #ECB06E;
 }
 #featured {
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 50px;
+    border: 2px solid #354E88;
 }
 #featured .fi {
-    font-size: 50px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 #featured .fi-item{
     color: #A880B4;
@@ -275,17 +286,17 @@ MENU
 }
 #featured p{
     font-size: 15px;
-    margin: 0px 100px;
+    margin: 30px 100px;
 }
 .featured-item {
-    width: 150px;
+    width: 350px;
 }
 #menu-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-#items {
+.items {
     margin: 10px;
 }
 #menu-items h2 {
@@ -303,14 +314,14 @@ MENU
     padding: 10px 0px;
 }
 /*Breakafst*/
-.Breakfast {
+#Breakfast {
     padding: 30px 0px;
     border: 2px solid #354E88;
 }
-.Breakfast h2{
+#Breakfast h2{
     margin: 0px 39px;
 }
-.Breakfast img {
+#Breakfast img {
     margin: 10px;
 }
 .breakfast-items {
@@ -318,14 +329,14 @@ MENU
     flex-direction: row;
 }
 /*Lunch*/
-.Lunch {
-    padding: 30px 0px;
+#Lunch {
+    padding: 30px 20px;
     border: 2px solid #354E88;
 }
-.Lunch h2{
+#Lunch h2{
     margin: 0px 39px;
 }
-.Lunch img {
+#Lunch img {
     margin: 10px;
 }
 .lunch-items {
@@ -333,14 +344,15 @@ MENU
     flex-direction: row;
 }
 /*Dinner*/
-.Dinner {
+#Dinner {
     padding: 30px 0px;
     border: 2px solid #354E88;
+    min-width: 660px;
 }
-.Dinner h2{
+#Dinner h2{
     margin: 0px 39px;
 }
-.Dinner img {
+#Dinner img {
     margin: 10px;
 }
 .dinner-items {
@@ -348,34 +360,41 @@ MENU
     flex-direction: row;
 }
 /*Desserts*/
-.Desserts {
+#Desserts {
     padding: 30px 0px;
     border: 2px solid #354E88;
 }
-.Desserts h2{
+#Desserts h2{
     margin: 0px 9px;
 }
-.Desserts ul {
+#Desserts ul {
     padding: 10px;
-    min-width: 265px;
+    min-width: 125px;
+}
+.dessert-items {
+    display: flex;
+    flex-direction: row;
 }
 /*Drinks*/
-.Drinks {
+#Drinks {
     padding: 30px 0px;
     border: 2px solid #354E88;
 }
-.Drinks h2{
+#Drinks h2{
     margin: 0px 9px;
 }
-.Drinks ul {
+#Drinks ul {
     padding: 10px;
-    min-width: 265px;
+    min-width: 80px;
+}
+.drink-items {
+    display: flex;
+    flex-direction: row;
 }
 /*Disclaimer*/
 #view-disclaimer {
     color: #354E88;
     text-align: center;
-    margin-left: 130px;
 }
 #view-disclaimer a{
     text-decoration: none;
