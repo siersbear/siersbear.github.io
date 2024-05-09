@@ -44,6 +44,7 @@ body {
         opacity .5s,
         visibility .5s
     ;
+    z-index: 0px;
 }
 .dropdown-menu a {
     background-color: coral;

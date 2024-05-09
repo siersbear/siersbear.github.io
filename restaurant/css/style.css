@@ -6,6 +6,12 @@ body {
     font-family: katari;
     background-color: #ffebd3;
 }
+hr {
+    background-color: #ECB06E;
+    border: 1px solid #ECB06E;
+    height: 3px;
+    margin: 0px 20px;
+}
 /**************************************************b***************************
 HOMEPAGE
 ******************************************************************************/
@@ -28,13 +34,6 @@ HOMEPAGE
     background-color: #ECB06E;
     padding: 0px;
 }
-#navbar-bottom a{
-    color:  #354E88;
-    text-decoration: none;
-    transition:
-        text-decoration .5s
-    ;
-}
 #navbar-bottom p {
     color: #354E88;
 }
@@ -42,42 +41,16 @@ HOMEPAGE
     text-decoration: underline;
 }
 /*DROPDOWN*/
-.dropbtn {
-    background-color:  #A880B4;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-.dropdown {
-    position: relative;
+#navbar-bottom a {
     display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ECB06E;
-    min-width: 120px;
-    z-index: 1;
-}
-.dropdown-content a {
-    padding: 12px 10px;
+    padding: 15px;
     text-decoration: none;
-    display: block;
+    color: #354E88;
 }
-.dropdown-content a:hover {
-    background-color:  #A880B4;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown:hover .dropbtn {
-    background-color:  #A880B4;
-}
-/*
-.dropdown {
+.dropdown-container {
     position: relative;
 }
-.dropdown-content {
+.dropdown-menu {
     position: absolute;
     opacity: 0;
     visibility: hidden;
@@ -85,31 +58,46 @@ HOMEPAGE
         opacity .5s,
         visibility .5s
     ;
-    z-index: 10;
+    z-index: 0px;
 }
-.dropdown-content a {
+.dropdown-menu a {
     background-color: #ECB06E;
-
+    width: 100%;
+    min-width: 100px;
 }
-.dropdown:hover .dropdown-content {
-    background: #ECB06E;
+.dropdown-menu a:hover {
+    background-color:#A880B4;
+}
+.dropdown-container:hover .dropdown-menu {
+    background-color:#A880B4;
     opacity: 1;
     visibility: visible;
 }
-*/
 /*FOOTER*/
 #footer {
     position: relative;
     margin-bottom: -100px;
     clear: both;
     bottom: 0;
+    background-color: #354E88;
+}
+#footer h2 {
+    color: #ECB06E;
+    font-size: 30px;
+    padding-top: 30px;
+    margin-left: 20px;
+}
+#footer hr {
+    background-color: #ECB06E;
+    border: 1px solid #ECB06E;
+    height: 3px;
+    margin: 0px 20px;
 }
 #footer .social-media {
-    background-color: #354E88;
     grid-column: auto;
     columns: 3;
-    padding: 20px 15px;
-    text-align: center;
+    padding: 20px 25px;
+    text-align: left;
     list-style-type: none;
     margin: 0;
 }
@@ -181,6 +169,12 @@ HOMEPAGE
     background-color: #354E88;
     display: flex;
     flex-direction: column;
+    transition:
+        transform .25s
+    ;
+}
+.card:hover {
+    transform: translateY(-4px);
 }
 .card img{
     width: 100%;
@@ -218,6 +212,7 @@ HOMEPAGE
     background-color: #A880B4;
     border: 3px solid #A880B4;
 }
+#email
 /*****************************************************************************
 ABOUT US
 ******************************************************************************/
@@ -226,10 +221,12 @@ ABOUT US
 }
 #about-us p {
     color: #354E88;
+    margin: 25px;
 }
 #about-us h2 {
     color: #A880B4;
-    font-size: 35px;
+    font-size: 45px;
+    margin: 25px;
 }
 #about-us .left {
     text-align: left;
@@ -242,6 +239,13 @@ ABOUT US
 }
 #about-us .middle h2{
     font-size: 50px;
+}
+.info {
+    text-align: center;
+}
+#slogan {
+    font-size: 20px;
+    text-align: center;
 }
 /*****************************************************************************
 MENU
@@ -317,6 +321,7 @@ MENU
 #Breakfast {
     padding: 30px 0px;
     border: 2px solid #354E88;
+    min-width: 700px;
 }
 #Breakfast h2{
     margin: 0px 39px;
@@ -332,6 +337,7 @@ MENU
 #Lunch {
     padding: 30px 20px;
     border: 2px solid #354E88;
+    min-width: 700px;
 }
 #Lunch h2{
     margin: 0px 39px;
@@ -347,7 +353,7 @@ MENU
 #Dinner {
     padding: 30px 0px;
     border: 2px solid #354E88;
-    min-width: 660px;
+    min-width: 700px;
 }
 #Dinner h2{
     margin: 0px 39px;
@@ -363,13 +369,14 @@ MENU
 #Desserts {
     padding: 30px 0px;
     border: 2px solid #354E88;
+    text-align: center;
 }
 #Desserts h2{
     margin: 0px 9px;
 }
 #Desserts ul {
     padding: 10px;
-    min-width: 125px;
+    min-width: 290px;
 }
 .dessert-items {
     display: flex;
@@ -379,13 +386,14 @@ MENU
 #Drinks {
     padding: 30px 0px;
     border: 2px solid #354E88;
+    text-align: center;
 }
 #Drinks h2{
     margin: 0px 9px;
 }
 #Drinks ul {
     padding: 10px;
-    min-width: 80px;
+    min-width: 290px;
 }
 .drink-items {
     display: flex;
@@ -420,11 +428,79 @@ MENU
 /*****************************************************************************
 LOCATIONS
 ******************************************************************************/
+#location-img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    object-position: top;
+    justify-content: center;
+}
+#locations h2 {
+    font-size: 60px;
+    text-align: center;
+    color:#A880B4;
+    margin: 0px;
+}
+#locations ul {
+    list-style-type: none;
+    text-align: center;
+    padding-right: 35px;
+}
+#locations li {
+    margin: 25px 0px;
+    color: #354E88;
+}
+.loc-icon {
+    width: 15px;
+    padding-right: 5px;
+}
+#email-us {
+    text-align: center;
+}
+#email-us p{
+    font-size: 20px;
+    color: #354E88;
+}
+#email-icon {
+    width: 40px;
+    margin-bottom: 20px;
+}
 
 /*****************************************************************************
-ORDER
+INFO
 ******************************************************************************/
-
+#info {
+    color: #354E88;
+    margin: 0px 20px;
+}
+#info h2 {
+    color: #A880B4;
+    text-align: center;
+    font-size: 40px;
+}
+/*****************************************************************************
+POLICY AND TERMS
+******************************************************************************/
+#terms h2{
+    color: #A880B4;
+    font-size: 35px;
+    text-align: center;
+}
+#terms {
+    color: #354E88;
+}
+#terms-conditions {
+    margin: 0px 20px;
+    padding-bottom: 40px;
+}
+#terms-conditions h3{
+    font-size: 25px;
+}
+#terms p {
+    text-align: center;
+    padding: 80px;
+    font-size: 30px;
+}
 /*****************************************************************************
 DISCLAIMER
 ******************************************************************************/
@@ -451,46 +527,69 @@ DISCLAIMER
     padding: 5px;
 }
 /*****************************************************************************
-EMAIL
+CONTACT
 ******************************************************************************/
-.contact-form {
+#contact-form {
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin:30px;
 }
-.contact-form h2 {
-    color: #A880B4;
-    font-size: 30px;
-}
-.contact-form label{
+#layout {
+    margin: 0px 300px;
+    padding: 50px;
     color: #354E88;
 }
-input[type=text], select, textarea {
-    width: 100%;
+#header {
+    font-size: 20px;
+}
+#header h1 {
+    color:#A880B4;
+}
+form {
+    background-color: #ffebd3;
+    padding: 36px;
+    border: 2px solid #354E88;
+    border-radius: 2px;
+}
+form div label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #354E88;
+}
+input, 
+select, 
+textarea {
     padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
     border: 1px solid #354E88;
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px;
-    margin-bottom: 16px; 
-    resize: vertical;
+    margin-bottom: 16px;
+    background-color: #fff4e6;
+    color: #354E88;
+}
+text-area {
+    font-family: katarana;
 }
 input[type=submit] {
-    background-color: #A880B4;
-    color: #ECB06E;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-input[type=submit]:hover {
-    background-color: #ECB06E;
+    width: auto;
+    background-color:  #ECB06E;
     color: #A880B4;
+    border: 0;
+    border-radius: 3px;
+    min-width: 75px;
+    transition: 
+        background-color .25s,
+        color .25s
+    ;
 }
-
-.container {
-    border-radius: 5px;
-    background-color: #ECB06E;
-    padding: 20px;
+input[type=submit]:hover{
+    background-color:  #A880B4;
+    color: #ECB06E;
+}
+input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: #ffebd3;
+    border: 2px solid #A880B4;
 }
 /*****************************************************************************
 EMAIL SUBMITTED
@@ -521,4 +620,1246 @@ EMAIL SUBMITTED
 #submitted a:hover {
     background-color: #ECB06E;
     color: #A880B4;
+}
+/*****************************************************************************
+MEDIA QUERIES
+******************************************************************************/
+/*TABLET MEDIA QUERY*/
+@media screen and (max-width: 768px) and (min-width: 480px) { 
+    /**************************************************b***************************
+    HOMEPAGE
+    ******************************************************************************/
+    /*NAV*/
+    #navbar-top {
+        display: flex;
+        justify-content: center;
+        background-color: #354E88;
+        margin: 0px;
+        padding: 0px;
+    }
+    #logo img {
+        width: 20vh;
+        padding: 10px;
+    }
+    #navbar-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #ECB06E;
+        padding: 0px;
+    }
+    #navbar-bottom p {
+        color: #354E88;
+    }
+    #navbar-bottom a:hover{
+        text-decoration: underline;
+    }
+    /*DROPDOWN*/
+    #navbar-bottom a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        color: #354E88;
+    }
+    .dropdown-container {
+        position: relative;
+    }
+    .dropdown-menu {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+            opacity .5s,
+            visibility .5s
+        ;
+        z-index: 0px;
+    }
+    .dropdown-menu a {
+        background-color: #ECB06E;
+        width: 10%;
+    }
+    .dropdown-menu a:hover {
+        background-color:#A880B4;
+    }
+    .dropdown-container:hover .dropdown-menu {
+        background-color:#A880B4;
+        opacity: 1;
+        visibility: visible;
+    }
+    /*FOOTER*/
+    #footer {
+        position: relative;
+        margin-bottom: -100px;
+        clear: both;
+        bottom: 0;
+        background-color: #354E88;
+    }
+    #footer h2 {
+        color: #ECB06E;
+        font-size: 30px;
+        padding-top: 30px;
+        margin-left: 20px;
+    }
+    #footer hr {
+        background-color: #ECB06E;
+        border: 1px solid #ECB06E;
+        height: 3px;
+        margin: 0px 20px;
+    }
+    #footer .social-media {
+        grid-column: auto;
+        columns: 3;
+        padding: 20px 25px;
+        text-align: left;
+        list-style-type: none;
+        margin: 0;
+    }
+    .social-media li {
+        padding: 5px 0px;
+    }
+    #footer a{
+        color:  #ECB06E;
+        text-decoration: none;
+    }
+    /*IMAGE*/
+    .coverimage {
+        object-fit: cover;
+        width: 100vw;
+        height: 20vh;
+    }
+    /*HERO*/
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero h1 {
+        font-size: 50px;
+        margin-bottom: 2vh;
+        color: #A880B4;
+    }
+    #hero p {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2.5vw;
+        margin: 0px 55px;
+        color: #354E88;
+        text-align: center;
+    }
+    #hero a {
+        font-size: 2.5vw;
+        display: inline-block;
+        margin: 25px 0px;
+        background-color: #ECB06E;
+        border-radius: 50px;
+        color: #354E88;
+        text-decoration: none;
+        padding: 25px;
+        font-weight: bold;
+        transition: 
+            background-color .5s
+        ;
+    }
+    #hero a:hover {
+        background-color: #A880B4;
+        color: #ECB06E;
+    }
+    /*CARD*/
+    #centered-column {
+        width: 100vw;
+        max-width: 800px;
+        margin: 40px auto;
+        display: flex;
+        gap: 36px;
+        justify-content: center;
+    }
+    .card {
+        text-align: center;
+        width: 350vw;
+        border: 2px solid #354E88;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #354E88;
+        display: flex;
+        flex-direction: column;
+        transition:
+            transform .25s
+        ;
+    }
+    .card:hover {
+        transform: translateY(-4px);
+    }
+    .card img{
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+    .card h2 {
+        font-size: 20px;
+        margin-top: 12px;
+        margin-bottom: 0px;
+        color: #ECB06E;
+    }
+    .card p{
+        font-size: 15px;
+        flex: 1;
+        color: #ECB06E;
+    }
+    .card a {
+        color: #354E88;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: 3px solid #ECB06E;
+        background-color: #ECB06E;
+        transition: 
+            background-color .5s,
+            color .5s;
+    }
+    .card a:hover {
+        color:#ECB06E;
+        background-color: #A880B4;
+        border: 3px solid #A880B4;
+    }
+    #email
+    /*****************************************************************************
+    ABOUT US
+    ******************************************************************************/
+    #about-us {
+        margin: 25px;
+    }
+    #about-us p {
+        color: #354E88;
+        margin: 25px;
+    }
+    #about-us h2 {
+        color: #A880B4;
+        font-size: 45px;
+        margin: 25px;
+    }
+    #about-us .left {
+        text-align: left;
+    }
+    #about-us .right {
+        text-align: right;
+    }
+    #about-us .middle {
+        text-align: center;
+    }
+    #about-us .middle h2{
+        font-size: 50px;
+    }
+    .info {
+        text-align: center;
+    }
+    #slogan {
+        font-size: 20px;
+        text-align: center;
+    }
+    /*****************************************************************************
+    MENU
+    ******************************************************************************/
+    #menu {
+        display: flex;
+        color: #354E88;
+    }
+    #column-list {
+        background-color: #A880B4;
+        padding: 0px;
+    }
+    #column-list ul{
+        list-style-type: none;
+        margin-right: 20px;
+    }
+    #column-list a{
+        text-decoration: none;
+        color: #354E88;
+        padding: 3px;
+        transition:
+            color .25s
+        ;
+    }
+    #column-list a:hover {
+        color: #ECB06E;
+    }
+    #featured {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 50px;
+        border: 2px solid #354E88;
+    }
+    #featured .fi {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    #featured .fi-item{
+        color: #A880B4;
+        font-size: 20px;
+    }
+    #featured p{
+        font-size: 15px;
+        margin: 30px 15px;
+    }
+    .featured-item {
+        width: 350px;
+    }
+    #menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 80px;
+    }
+    .items {
+        margin: 10px;
+    }
+    #menu-items h2 {
+        font-size: 20px;
+        color: #A880B4;
+    }
+    #menu-items ul {
+        list-style-type: none;
+    }
+    #menu-items li {
+        padding: 10px 0px;
+        margin-right: 15px;
+    }
+    /*Breakafst*/
+    #Breakfast {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+        min-width: 70px;
+    }
+    #Breakfast h2{
+        margin: 0px 20px;
+    }
+    #Breakfast img {
+        visibility: hidden;
+        display: none;
+    }
+    .breakfast-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Lunch*/
+    #Lunch {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+        min-width: 325px;
+    }
+    #Lunch h2{
+        margin: 0px 20px;
+    }
+    #Lunch img {
+        visibility: hidden;
+        display: none;
+    }
+    .lunch-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Dinner*/
+    #Dinner {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+        min-width: 70px;
+    }
+    #Dinner h2{
+        margin: 0px 20px;
+    }
+    #Dinner img {
+        visibility: hidden;
+        display: none;
+    }
+    .dinner-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Desserts*/
+    #Desserts {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+        min-width: 80px;
+    }
+    #Desserts h2{
+        margin: 0px 20px;
+    }
+    #Desserts ul {
+        padding: 10px;
+        min-width: 120px;
+    }
+    .dessert-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Drinks*/
+    #Drinks {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+    }
+    #Drinks h2{
+        margin: 0px 20px;
+    }
+    #Drinks ul {
+        padding: 10px;
+        min-width: 105px;
+    }
+    .drink-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Disclaimer*/
+    #view-disclaimer {
+        color: #354E88;
+        text-align: center;
+    }
+    #view-disclaimer p{
+        margin: 0px;
+        font-size: 10px;
+    }
+    #view-disclaimer a{
+        display: inline-block;
+        text-decoration: none;
+        color:#ECB06E;
+        background-color: #A880B4;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 30px;
+        transition: 
+            background-color .5s,
+            color .5s
+        ;
+    }
+    #view-disclaimer a:hover{
+        color:#A880B4;
+        background-color:#ECB06E;
+    }
+    /*****************************************************************************
+    LOCATIONS
+    ******************************************************************************/
+    #location-img {
+        width: 100vw;
+        height: 30vh;
+        object-fit: cover;
+        object-position: top;
+        justify-content: center;
+    }
+    #locations h2 {
+        font-size: 40px;
+        text-align: center;
+        color:#A880B4;
+        margin: 0px;
+    }
+    #locations ul {
+        list-style-type: none;
+        text-align: center;
+        padding-right: 35px;
+    }
+    #locations li {
+        margin: 25px 0px;
+        color: #354E88;
+    }
+    .loc-icon {
+        width: 15px;
+        padding-right: 5px;
+    }
+    #email-us {
+        text-align: center;
+    }
+    #email-us p{
+        font-size: 15px;
+        color: #354E88;
+    }
+    #email-icon {
+        width: 40px;
+        margin-bottom: 20px;
+    }
+
+    /*****************************************************************************
+    INFO
+    ******************************************************************************/
+    #info {
+        color: #354E88;
+        margin: 0px 20px;
+    }
+    #info h2 {
+        color: #A880B4;
+        text-align: center;
+        font-size: 40px;
+    }
+    /*****************************************************************************
+    POLICY AND TERMS
+    ******************************************************************************/
+    #terms h2{
+        color: #A880B4;
+        font-size: 35px;
+        text-align: center;
+    }
+    #terms {
+        color: #354E88;
+    }
+    #terms-conditions {
+        margin: 0px 20px;
+        padding-bottom: 40px;
+    }
+    #terms-conditions h3{
+        font-size: 25px;
+    }
+    #terms p {
+        text-align: center;
+        padding: 80px;
+        font-size: 30px;
+    }
+    #terms .thankyou {
+        font-size: 20px;
+    }
+    /*****************************************************************************
+    DISCLAIMER
+    ******************************************************************************/
+    #disclaimer {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        justify-content: flex-end;
+        color: #354E88;
+    }
+    #disclaimer h2 {
+        font-size: 40px;
+        margin: 10px 0px;
+        color:#A880B4;
+    }
+    #more {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #354E88;
+    }
+    #more img {
+        width: 6vw;
+        padding: 5px;
+    }
+    /*****************************************************************************
+    CONTACT
+    ******************************************************************************/
+    #contact-form {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #layout {
+        margin: 0px;
+        padding: 50px;
+        color: #354E88;
+    }
+    #header {
+        font-size: 20px;
+    }
+    #header h1 {
+        color:#A880B4;
+    }
+    form {
+        background-color: #ffebd3;
+        padding: 36px;
+        border: 2px solid #354E88;
+        border-radius: 2px;
+    }
+    form div label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #354E88;
+    }
+    input, 
+    select, 
+    textarea {
+        padding: 12px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #354E88;
+        margin-bottom: 16px;
+        background-color: #fff4e6;
+        color: #354E88;
+    }
+    text-area {
+        font-family: katarana;
+    }
+    input[type=submit] {
+        width: auto;
+        background-color:  #ECB06E;
+        color: #A880B4;
+        border: 0;
+        border-radius: 3px;
+        min-width: 75px;
+        transition: 
+            background-color .25s,
+            color .25s
+        ;
+    }
+    input[type=submit]:hover{
+        background-color:  #A880B4;
+        color: #ECB06E;
+    }
+    input:not(:focus):not(:placeholder-shown):invalid {
+        background-color: #ffebd3;
+        border: 2px solid #A880B4;
+    }
+    /*****************************************************************************
+    EMAIL SUBMITTED
+    ******************************************************************************/
+    #submitted {
+        text-align: center;
+        color: #354E88;
+    }
+    #submitted h2 {
+        color: #A880B4;
+        font-size: 50px;
+        margin: 40px;
+    }
+    #submitted p {
+        margin: 40px;
+    }
+    #submitted a {
+        background-color: #A880B4;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #ECB06E;
+        transition: 
+            background-color .5s
+        ;
+    }
+    #submitted a:hover {
+        background-color: #ECB06E;
+        color: #A880B4;
+    }
+}
+/*CELL PHONE MEDIA QUERY*/
+@media screen and (max-width: 480px) {
+    /**************************************************b***************************
+    HOMEPAGE
+    ******************************************************************************/
+    /*NAV*/
+    #navbar-top {
+        display: flex;
+        justify-content: center;
+        background-color: #354E88;
+        margin: 0px;
+        padding: 0px;
+    }
+    #logo img {
+        width: 20vh;
+        padding: 10px;
+    }
+    #navbar-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #ECB06E;
+        padding: 0px;
+    }
+    #navbar-bottom .line {
+        display: none;
+    }
+    #navbar-bottom p {
+        color: #354E88;
+    }
+    #navbar-bottom a:hover{
+        text-decoration: underline;
+    }
+    /*DROPDOWN*/
+    .dropdown-container {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .dropdown-menu {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+            opacity .5s,
+            visibility .5s
+        ;
+        z-index: 0px;
+    }
+    .dropdown-menu a {
+        background-color: #ECB06E;
+        width: 10%;
+    }
+    .dropdown-menu a:hover {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .dropdown-container:hover .dropdown-menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    /*FOOTER*/
+    #footer {
+        position: relative;
+        margin-bottom: -100px;
+        clear: both;
+        bottom: 0;
+        background-color: #354E88;
+    }
+    #footer h2 {
+        color: #ECB06E;
+        font-size: 20px;
+        padding-top: 30px;
+        margin-left: 20px;
+    }
+    #footer hr {
+        background-color: #ECB06E;
+        border: 1px solid #ECB06E;
+        height: 3px;
+        margin: 0px 20px;
+    }
+    #footer .social-media {
+        grid-column: auto;
+        columns: 3;
+        padding: 20px 25px;
+        text-align: left;
+        list-style-type: none;
+        margin: 0;
+        font-size: 10px;
+    }
+    .social-media li {
+        padding: 5px 0px;
+    }
+    #footer a{
+        color:  #ECB06E;
+        text-decoration: none;
+    }
+    /*IMAGE*/
+    .coverimage {
+        object-fit: cover;
+        width: 100vw;
+        height: 20vh;
+    }
+    /*HERO*/
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero h1 {
+        font-size: 40px;
+        margin-bottom: 2vh;
+        color: #A880B4;
+    }
+    #hero p {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 3vw;
+        margin: 0px 30px;
+        color: #354E88;
+        text-align: center;
+    }
+    #hero a {
+        font-size: 3vw;
+        display: inline-block;
+        margin: 25px 0px;
+        background-color: #ECB06E;
+        border-radius: 50px;
+        color: #354E88;
+        text-decoration: none;
+        padding: 25px;
+        font-weight: bold;
+        transition: 
+            background-color .5s
+        ;
+    }
+    #hero a:hover {
+        background-color: #A880B4;
+        color: #ECB06E;
+    }
+    /*CARD*/
+    #centered-column {
+        width: 100vw;
+        max-width: 800px;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        text-align: center;
+        width: 90vw;
+        border: 2px solid #354E88;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #354E88;
+        display: flex;
+        flex-direction: column;
+        transition:
+            transform .25s
+        ;
+    }
+    .card:hover {
+        transform: translateY(-4px);
+    }
+    .card img{
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+    .card h2 {
+        font-size: 20px;
+        margin-top: 12px;
+        margin-bottom: 0px;
+        color: #ECB06E;
+    }
+    .card p{
+        font-size: 15px;
+        flex: 1;
+        color: #ECB06E;
+    }
+    .card a {
+        color: #354E88;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: 3px solid #ECB06E;
+        background-color: #ECB06E;
+        transition: 
+            background-color .5s,
+            color .5s;
+    }
+    .card a:hover {
+        color:#ECB06E;
+        background-color: #A880B4;
+        border: 3px solid #A880B4;
+    }
+    #email
+    /*****************************************************************************
+    ABOUT US
+    ******************************************************************************/
+    #about-us {
+        margin: 25px;
+    }
+    #about-us p {
+        color: #354E88;
+        margin: 25px;
+    }
+    #about-us h2 {
+        color: #A880B4;
+        font-size: 35px;
+        margin: 25px;
+    }
+    #about-us .left {
+        text-align: left;
+    }
+    #about-us .right {
+        text-align: right;
+    }
+    #about-us .middle {
+        text-align: center;
+    }
+    #about-us .middle h2{
+        font-size: 40px;
+    }
+    .info {
+        text-align: center;
+    }
+    #slogan {
+        font-size: 20px;
+        text-align: center;
+    }
+    /*****************************************************************************
+    MENU
+    ******************************************************************************/
+    #menu {
+        display: flex;
+        color: #354E88;
+    }
+    #column-list {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    #featured {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+        border: 2px solid #354E88;
+    }
+    #featured .fi {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    #featured .fi-item{
+        color: #A880B4;
+        font-size: 20px;
+    }
+    #featured p{
+        font-size: 15px;
+        margin: 30px 15px;
+    }
+    .featured-item {
+        width: 350px;
+    }
+    #menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 80px;
+    }
+    .items {
+        margin: 10px;
+    }
+    #menu-items h2 {
+        font-size: 20px;
+        color: #A880B4;
+    }
+    #menu-items ul {
+        list-style-type: none;
+    }
+    #menu-items li {
+        padding: 10px 0px;
+        margin-right: 15px;
+    }
+    /*Breakafst*/
+    #Breakfast {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+        min-width: 70px;
+    }
+    #Breakfast h2{
+        margin: 0px 20px;
+    }
+    #Breakfast img {
+        visibility: hidden;
+        display: none;
+    }
+    .breakfast-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Lunch*/
+    #Lunch {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+        min-width: 325px;
+    }
+    #Lunch h2{
+        margin: 0px 20px;
+    }
+    #Lunch img {
+        visibility: hidden;
+        display: none;
+    }
+    .lunch-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Dinner*/
+    #Dinner {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+        min-width: 70px;
+    }
+    #Dinner h2{
+        margin: 0px 20px;
+    }
+    #Dinner img {
+        visibility: hidden;
+        display: none;
+    }
+    .dinner-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Desserts*/
+    #Desserts {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+        min-width: 80px;
+    }
+    #Desserts h2{
+        margin: 0px 20px;
+    }
+    #Desserts ul {
+        padding: 10px;
+        min-width: 120px;
+    }
+    .dessert-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Drinks*/
+    #Drinks {
+        padding: 30px 0px;
+        border: 2px solid #354E88;
+    }
+    #Drinks h2{
+        margin: 0px 20px;
+    }
+    #Drinks ul {
+        padding: 10px;
+        min-width: 105px;
+    }
+    .drink-items {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        margin: 0px;
+    }
+    /*Disclaimer*/
+    #view-disclaimer {
+        color: #354E88;
+        text-align: center;
+    }
+    #view-disclaimer p{
+        margin: 0px;
+        font-size: 10px;
+    }
+    #view-disclaimer a{
+        display: inline-block;
+        text-decoration: none;
+        color:#ECB06E;
+        background-color: #A880B4;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 30px;
+        transition: 
+            background-color .5s,
+            color .5s
+        ;
+    }
+    #view-disclaimer a:hover{
+        color:#A880B4;
+        background-color:#ECB06E;
+    }
+    /*****************************************************************************
+    LOCATIONS
+    ******************************************************************************/
+    #location-img {
+        width: 130vw;
+        height: 20vh;
+        object-fit: cover;
+        object-position: top;
+        justify-content: center;
+    }
+    #locations h2 {
+        font-size: 40px;
+        text-align: center;
+        color:#A880B4;
+        margin: 0px;
+    }
+    #locations ul {
+        list-style-type: none;
+        text-align: center;
+        padding-right: 35px;
+    }
+    #locations li {
+        margin: 25px 0px;
+        color: #354E88;
+    }
+    .loc-icon {
+        width: 15px;
+        padding-right: 5px;
+    }
+    #email-us {
+        text-align: center;
+    }
+    #email-us p{
+        font-size: 15px;
+        color: #354E88;
+    }
+    #email-icon {
+        width: 40px;
+        margin-bottom: 20px;
+    }
+
+    /*****************************************************************************
+    INFO
+    ******************************************************************************/
+    #info {
+        color: #354E88;
+        margin: 0px 20px;
+    }
+    #info h2 {
+        color: #A880B4;
+        text-align: center;
+        font-size: 40px;
+    }
+    /*****************************************************************************
+    POLICY AND TERMS
+    ******************************************************************************/
+    #terms h2{
+        color: #A880B4;
+        font-size: 30px;
+        text-align: center;
+    }
+    #terms {
+        color: #354E88;
+    }
+    #terms-conditions {
+        margin: 0px 20px;
+        padding-bottom: 40px;
+    }
+    #terms-conditions h3{
+        font-size: 20px;
+    }
+    #terms p {
+        text-align: center;
+        padding: 80px;
+        font-size: 20px;
+    }
+    #terms .thankyou {
+        font-size: 20px;
+    }
+    /*****************************************************************************
+    DISCLAIMER
+    ******************************************************************************/
+    #disclaimer {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        justify-content: flex-end;
+        color: #354E88;
+    }
+    #disclaimer h2 {
+        font-size: 40px;
+        margin: 10px 0px;
+        color:#A880B4;
+    }
+    #more {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #354E88;
+    }
+    #more img {
+        width: 15vw;
+        padding: 5px;
+    }
+    /*****************************************************************************
+    CONTACT
+    ******************************************************************************/
+    #contact-form {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #layout {
+        margin: 0px;
+        padding: 20px;
+        color: #354E88;
+    }
+    #header {
+        font-size: 20px;
+    }
+    #header h1 {
+        color:#A880B4;
+    }
+    form {
+        background-color: #ffebd3;
+        padding: 36px;
+        border: 2px solid #354E88;
+        border-radius: 2px;
+    }
+    form div label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #354E88;
+    }
+    input, 
+    select, 
+    textarea {
+        padding: 12px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #354E88;
+        margin-bottom: 16px;
+        background-color: #fff4e6;
+        color: #354E88;
+    }
+    text-area {
+        font-family: katarana;
+    }
+    input[type=submit] {
+        width: auto;
+        background-color:  #ECB06E;
+        color: #A880B4;
+        border: 0;
+        border-radius: 3px;
+        min-width: 75px;
+        transition: 
+            background-color .25s,
+            color .25s
+        ;
+    }
+    input[type=submit]:hover{
+        background-color:  #A880B4;
+        color: #ECB06E;
+    }
+    input:not(:focus):not(:placeholder-shown):invalid {
+        background-color: #ffebd3;
+        border: 2px solid #A880B4;
+    }
+    /*****************************************************************************
+    EMAIL SUBMITTED
+    ******************************************************************************/
+    #submitted {
+        text-align: center;
+        color: #354E88;
+    }
+    #submitted h2 {
+        color: #A880B4;
+        font-size: 50px;
+        margin: 40px;
+    }
+    #submitted p {
+        margin: 40px;
+    }
+    #submitted a {
+        background-color: #A880B4;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #ECB06E;
+        transition: 
+            background-color .5s
+        ;
+    }
+    #submitted a:hover {
+        background-color: #ECB06E;
+        color: #A880B4;
+    }
 }
