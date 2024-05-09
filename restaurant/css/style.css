@@ -4,7 +4,7 @@
 body {
     margin: 0px;
     font-family: katari;
-    background-color: #FEF2E3;
+    background-color: #ffebd3;
 }
 /**************************************************b***************************
 HOMEPAGE
@@ -396,11 +396,17 @@ MENU
     color: #354E88;
     text-align: center;
 }
+#view-disclaimer p{
+    margin: 0px;
+    font-size: 10px;
+}
 #view-disclaimer a{
+    display: inline-block;
     text-decoration: none;
     color:#ECB06E;
     background-color: #A880B4;
     padding: 10px;
+    margin: 10px;
     border-radius: 30px;
     transition: 
         background-color .5s,
