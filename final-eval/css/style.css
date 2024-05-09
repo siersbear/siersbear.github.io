@@ -28,15 +28,19 @@ CENTERED SINGLE COLUMN LAYOUT
     padding: 20px 0px;
 }
 .column-container h1{
-    font-size: 50px;
+    font-size: 60px;
+    margin: 0px;
     color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .column-container h3{
     font-size: 20px;
     color: white;
+    margin: 20px;
 }
 .column-container .party{
     font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /*******************************************************************************
 SIDE BY SIDE
@@ -54,6 +58,14 @@ SIDE BY SIDE
 #side-by-side h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+#side-by-side h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#side-by-side p {
+    margin: 0px;
     padding-bottom: 30px;
 }
 /*******************************************************************************
@@ -84,6 +96,7 @@ INFO
 #CTA .box {
     background-color: #1a3aba;
     border: 1px solid #0a1e6c;
+    width: 250px;
     padding: 10px;
     color: white;
     text-decoration: none;
@@ -95,14 +108,15 @@ INFO
     ;
 }
 #CTA .box:hover {
-    background-color:#ba2533;
+    background-color: white;
+    color: #ba2533;
     border: 1px solid #6d121b;
     box-shadow: 5px 5px 5px #6d121b;
     transform: translateY(-4px);
 }
 #CTA .box:active {
-    color:#ba2533;
-    background-color: white;
+    color:white;
+    background-color: #ba2533;
     border: 1px solid #6d121b;
     box-shadow: none;
 }
@@ -111,6 +125,14 @@ INFO
 ****************************************************************************/
 /*TABLET MEDIA QUERY*/
 @media screen and (max-width: 768px) and (min-width: 480px) { 
+    body {
+        margin: 0px;
+        font-family: sans-serif;
+        background-image: linear-gradient(
+            #1a3aba,#ffffff,#ffffff
+        );
+        height: 960px;
+    }
     /***************************************************************************
     CENTERED SINGLE COLUMN LAYOUT
     ***************************************************************************/
@@ -185,7 +207,8 @@ INFO
     #CTA {
         display: flex;
         justify-content: space-between;
-        margin: 0px 150px;
+        margin: 0px 20px;
+        margin-top: 10px;
     }
     #CTA {
         font-size: 13px;
@@ -204,14 +227,15 @@ INFO
         ;
     }
     #CTA .box:hover {
-        background-color:#ba2533;
+        background-color:white;
+        color: #ba2533;
         border: 1px solid #6d121b;
         box-shadow: 5px 5px 5px #6d121b;
         transform: translateY(-4px);
     }
     #CTA .box:active {
-        color:#ba2533;
-        background-color: white;
+        color:white;
+        background-color: #ba2533;
         border: 1px solid #6d121b;
         box-shadow: none;
     }
@@ -233,7 +257,7 @@ INFO
         padding: 20px 0px;
     }
     .column-container h1{
-        font-size: 50px;
+        font-size: 30px;
         color: white;
     }
     .column-container h3{
@@ -241,7 +265,7 @@ INFO
         color: white;
     }
     .column-container .party{
-        font-size: 25px;
+        font-size: 20px;
     }
     /***************************************************************************
     SIDE BY SIDE
@@ -285,18 +309,19 @@ INFO
         font-size: 20px;
     }
     #info p {
-        font-size: 15px;
+        font-size: 16px;
         padding: 5px 0px;
     }
     #CTA {
         display: flex;
         justify-content: space-between;
-        margin: 4px;
-        font-size: 13px;
+        margin: 1px;
+        font-size: 10px;
     }
     #CTA .box {
         background-color: #1a3aba;
         border: 1px solid #0a1e6c;
+        width: 100px;
         padding: 10px;
         color: white;
         text-align: center;
@@ -310,14 +335,15 @@ INFO
         ;
     }
     #CTA .box:hover {
-        background-color:#ba2533;
+        background-color: white;
+        color: #ba2533;
         border: 1px solid #6d121b;
         box-shadow: 5px 5px 5px #6d121b;
         transform: translateY(-4px);
     }
     #CTA .box:active {
-        color:#ba2533;
-        background-color: white;
+        color: white;
+        background-color:#ba2533;
         border: 1px solid #6d121b;
         box-shadow: none;
     }
