@@ -30,41 +30,29 @@
                     </div>
             </div>
         </div>
-        <div id="disclaimer">
-            <h2>Allergy Disclaimer</h2>
-            <p>
-                At MysticBites, we take allergies and dietary restrictions 
-                seriously. However, due to the nature of our menu which includes 
-                dishes containing mystery ingredients or undisclosed components, 
-                we are unable to guarantee that any dish is completely free from 
-                allergens or other dietary concerns.
-                Our chefs use a variety of ingredients and techniques, some of 
-                which may not be disclosed in our menu descriptions. While we 
-                strive to accommodate special requests and provide accurate 
-                information about our dishes, we cannot guarantee that 
-                cross-contact with allergens will not occur.
-            </p>
-            <p>
-                We encourage guests with food allergies or dietary restrictions 
-                to inform our staff before placing their order. Our team will do 
-                their best to accommodate your needs and provide guidance on 
-                menu options. However, please be aware that consuming food at 
-                Mystic Bites is done at your own risk, and we cannot assume 
-                liability for any allergic reactions or adverse effects that may 
-                occur.
-            </p>
-            <p>
-                If you have any questions or concerns about allergens or ingredients, please don't hesitate to ask a member of our team for assistance. Your safety and satisfaction are important to us, and we appreciate your understanding.
-                Thank you for choosing MysticBites. We look forward to serving you soon.
-            </p>
-        </div>
-        <div id="more">
-            <p>Have any other questions? Feel free to leave us an email or check 
-                out our FAQ!
-            </p>
-            <a href="email.html"><img src="images/EMAIL.png"></a>
-            <a href="#FAQ"><img src="images/COMMENT.png"></a>
-        </div>
+        <div class="contact-form">
+            <h2>EMAIL US</h2>
+            <form action="email-submitted.html">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Philippines</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea 
+                    id="subject" 
+                    name="subject" 
+                    placeholder="Write here.." 
+                    style="height:200px">
+                </textarea>
+                <input type="submit" value="Submit">
+            </form>
+          </div>
         <div id="footer">
             <ul class="social-media">
                 <li><a href="policy-and-terms.html">Policy</a></li>

@@ -26,7 +26,7 @@ HOMEPAGE
     align-items: center;
     justify-content: space-evenly;
     background-color: #ECB06E;
-    padding: 10px;
+    padding: 0px;
 }
 #navbar-bottom a{
     color:  #354E88;
@@ -44,7 +44,6 @@ HOMEPAGE
 /*DROPDOWN*/
 .dropbtn {
     background-color:  #A880B4;
-    color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -57,12 +56,11 @@ HOMEPAGE
     display: none;
     position: absolute;
     background-color: #ECB06E;
-    min-width: 160px;
+    min-width: 120px;
     z-index: 1;
 }
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    padding: 12px 10px;
     text-decoration: none;
     display: block;
 }
@@ -75,6 +73,30 @@ HOMEPAGE
 .dropdown:hover .dropbtn {
     background-color:  #A880B4;
 }
+/*
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity .5s,
+        visibility .5s
+    ;
+    z-index: 10;
+}
+.dropdown-content a {
+    background-color: #ECB06E;
+
+}
+.dropdown:hover .dropdown-content {
+    background: #ECB06E;
+    opacity: 1;
+    visibility: visible;
+}
+*/
 /*FOOTER*/
 #footer {
     position: relative;
@@ -110,13 +132,13 @@ HOMEPAGE
     align-items: center;
 }
 #hero h1 {
-    font-size: 8vw;
+    font-size: 50px;
     margin-bottom: 2vh;
     color: #A880B4;
 }
 #hero p {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin: 0px 55px;
     color: #354E88;
     text-align: center;
@@ -197,11 +219,179 @@ HOMEPAGE
 /*****************************************************************************
 ABOUT US
 ******************************************************************************/
-
+#about-us {
+    margin: 25px;
+}
+#about-us p {
+    color: #354E88;
+}
+#about-us h2 {
+    color: #A880B4;
+    font-size: 35px;
+}
+#about-us .left {
+    text-align: left;
+}
+#about-us .right {
+    text-align: right;
+}
+#about-us .middle {
+    text-align: center;
+}
+#about-us .middle h2{
+    font-size: 50px;
+}
 /*****************************************************************************
 MENU
 ******************************************************************************/
-
+#menu {
+    display: flex;
+    color: #354E88;
+}
+#column-list {
+    background-color: #A880B4;
+    padding: 0px 10px;
+}
+#column-list ul{
+    list-style-type: none;
+}
+#column-list a{
+    text-decoration: none;
+    color: #354E88;
+    padding: 3px;
+}
+#featured {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+#featured .fi {
+    font-size: 50px;
+}
+#featured .fi-item{
+    color: #A880B4;
+    font-size: 20px;
+}
+#featured p{
+    font-size: 15px;
+    margin: 0px 100px;
+}
+.featured-item {
+    width: 150px;
+}
+#menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#items {
+    margin: 10px;
+}
+#menu-items h2 {
+    font-size: 30px;
+    color: #A880B4;
+}
+#menu-items img {
+    width: 300px;
+    padding: 0px 30px;
+}
+#menu-items ul {
+    list-style-type: none;
+}
+#menu-items li {
+    padding: 10px 0px;
+}
+/*Breakafst*/
+.Breakfast {
+    padding: 30px 0px;
+    border: 2px solid #354E88;
+}
+.Breakfast h2{
+    margin: 0px 39px;
+}
+.Breakfast img {
+    margin: 10px;
+}
+.breakfast-items {
+    display: flex;
+    flex-direction: row;
+}
+/*Lunch*/
+.Lunch {
+    padding: 30px 0px;
+    border: 2px solid #354E88;
+}
+.Lunch h2{
+    margin: 0px 39px;
+}
+.Lunch img {
+    margin: 10px;
+}
+.lunch-items {
+    display: flex;
+    flex-direction: row;
+}
+/*Dinner*/
+.Dinner {
+    padding: 30px 0px;
+    border: 2px solid #354E88;
+}
+.Dinner h2{
+    margin: 0px 39px;
+}
+.Dinner img {
+    margin: 10px;
+}
+.dinner-items {
+    display: flex;
+    flex-direction: row;
+}
+/*Desserts*/
+.Desserts {
+    padding: 30px 0px;
+    border: 2px solid #354E88;
+}
+.Desserts h2{
+    margin: 0px 9px;
+}
+.Desserts ul {
+    padding: 10px;
+    min-width: 265px;
+}
+/*Drinks*/
+.Drinks {
+    padding: 30px 0px;
+    border: 2px solid #354E88;
+}
+.Drinks h2{
+    margin: 0px 9px;
+}
+.Drinks ul {
+    padding: 10px;
+    min-width: 265px;
+}
+/*Disclaimer*/
+#view-disclaimer {
+    color: #354E88;
+    text-align: center;
+    margin-left: 130px;
+}
+#view-disclaimer a{
+    text-decoration: none;
+    color:#ECB06E;
+    background-color: #A880B4;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 
+        background-color .5s,
+        color .5s
+    ;
+}
+#view-disclaimer a:hover{
+    color:#A880B4;
+    background-color:#ECB06E;
+}
 /*****************************************************************************
 LOCATIONS
 ******************************************************************************/
@@ -209,3 +399,101 @@ LOCATIONS
 /*****************************************************************************
 ORDER
 ******************************************************************************/
+
+/*****************************************************************************
+DISCLAIMER
+******************************************************************************/
+#disclaimer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: flex-end;
+    color: #354E88;
+}
+#disclaimer h2 {
+    font-size: 40px;
+    margin: 10px 0px;
+    color:#A880B4;
+}
+#more {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #354E88;
+}
+#more img {
+    width: 6vw;
+    padding: 5px;
+}
+/*****************************************************************************
+EMAIL
+******************************************************************************/
+.contact-form {
+    text-align: center;
+    margin:30px;
+}
+.contact-form h2 {
+    color: #A880B4;
+    font-size: 30px;
+}
+.contact-form label{
+    color: #354E88;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #354E88;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #A880B4;
+    color: #ECB06E;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #ECB06E;
+    color: #A880B4;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #ECB06E;
+    padding: 20px;
+}
+/*****************************************************************************
+EMAIL SUBMITTED
+******************************************************************************/
+#submitted {
+    text-align: center;
+    color: #354E88;
+}
+#submitted h2 {
+    color: #A880B4;
+    font-size: 50px;
+    margin: 40px;
+}
+#submitted p {
+    margin: 40px;
+}
+#submitted a {
+    background-color: #A880B4;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ECB06E;
+    transition: 
+        background-color .5s
+    ;
+}
+#submitted a:hover {
+    background-color: #ECB06E;
+    color: #A880B4;
+}
