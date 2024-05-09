@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-image: linear-gradient(
+        #1a3aba,#ffffff,#ffffff
+    );
+}
+/*COLORS
+#ba2533 RED
+#ffffff WHITE
+#1a3aba BLUE
+*/
+/*******************************************************************************
+CENTERED SINGLE COLUMN LAYOUT
+*******************************************************************************/
+.single-column {
+    width: 50%;
+    min-width: 500px;
+    margin-left: auto;
+    margin: 0px auto;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.column-container {
+    padding: 20px 0px;
+}
+.column-container h1{
+    font-size: 50px;
+    color: white;
+}
+.column-container h3{
+    font-size: 20px;
+    color: white;
+}
+.column-container .party{
+    font-size: 25px;
+}
+/*******************************************************************************
+SIDE BY SIDE
+*******************************************************************************/
+#side-by-side {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#team-1 img {
+    width: 30vw;
+    margin: 30px;
+}
+#side-by-side h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+/*******************************************************************************
+INFO
+*******************************************************************************/
+#info {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#info h2 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ba2533;
+}
+#info .join-us{
+    font-size: 24px;
+}
+#info p {
+    font-size: 16.5px;
+    padding: 5px 0px;
+}
+#CTA {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 200px;
+}
+#CTA .box {
+    background-color: #1a3aba;
+    border: 1px solid #0a1e6c;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition:
+        background-color .5s,
+        box-shadow .5s,
+        transform .3s,
+        border .5s
+    ;
+}
+#CTA .box:hover {
+    background-color:#ba2533;
+    border: 1px solid #6d121b;
+    box-shadow: 5px 5px 5px #6d121b;
+    transform: translateY(-4px);
+}
+#CTA .box:active {
+    color:#ba2533;
+    background-color: white;
+    border: 1px solid #6d121b;
+    box-shadow: none;
+}
+/****************************************************************************
+  Media Query - Mobile Breakpoint
+****************************************************************************/
+/*TABLET MEDIA QUERY*/
+@media screen and (max-width: 768px) and (min-width: 480px) { 
+    /***************************************************************************
+    CENTERED SINGLE COLUMN LAYOUT
+    ***************************************************************************/
+    .single-column {
+        width: 50%;
+        min-width: 300px;
+        margin-left: auto;
+        margin: 0px auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .column-container {
+        padding: 20px 0px;
+    }
+    .column-container h1{
+        font-size: 45px;
+        color: white;
+    }
+    .column-container h3{
+        font-size: 17px;
+        color: white;
+    }
+    .column-container .party{
+        font-size: 20px;
+    }
+    /***************************************************************************
+    SIDE BY SIDE
+    ***************************************************************************/
+    #side-by-side {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #team-1 img {
+        width: 30vw;
+        margin: 30px;
+    }
+    #side-by-side h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    #side-by-side h2 {
+        font-size: 20px;
+    }
+    #side-by-side p {
+        font-size: 15px;
+    }
+    /***************************************************************************
+    INFO
+    ***************************************************************************/
+    #info {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #info h2 {
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #ba2533;
+    }
+    #info .join-us{
+        font-size: 19px;
+    }
+    #info p {
+        font-size: 13px;
+        padding: 5px 0px;
+    }
+    #CTA {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 150px;
+    }
+    #CTA {
+        font-size: 13px;
+    } 
+    #CTA .box {
+        background-color: #1a3aba;
+        border: 1px solid #0a1e6c;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        transition:
+            background-color .5s,
+            box-shadow .5s,
+            transform .3s,
+            border .5s
+        ;
+    }
+    #CTA .box:hover {
+        background-color:#ba2533;
+        border: 1px solid #6d121b;
+        box-shadow: 5px 5px 5px #6d121b;
+        transform: translateY(-4px);
+    }
+    #CTA .box:active {
+        color:#ba2533;
+        background-color: white;
+        border: 1px solid #6d121b;
+        box-shadow: none;
+    }
+}
+/*CELL PHONE MEDIA QUERY*/
+@media screen and (max-width: 480px) {
+    /***************************************************************************
+    CENTERED SINGLE COLUMN LAYOUT
+    ***************************************************************************/
+    .single-column {
+        width: 50%;
+        min-width: 200px;
+        margin-left: auto;
+        margin: 0px auto;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .column-container {
+        padding: 20px 0px;
+    }
+    .column-container h1{
+        font-size: 50px;
+        color: white;
+    }
+    .column-container h3{
+        font-size: 20px;
+        color: white;
+    }
+    .column-container .party{
+        font-size: 25px;
+    }
+    /***************************************************************************
+    SIDE BY SIDE
+    ***************************************************************************/
+    #side-by-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #team-1 img {
+        width: 60vw;
+        height: 20vh;
+        object-fit: cover;
+        object-position: top;
+        margin: 10px;
+    }
+    #side-by-side h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    #team-1 p {
+        font-size: 15px;
+    }
+    /***************************************************************************
+    INFO
+    ***************************************************************************/
+    #info {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #info h2 {
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #ba2533;
+    }
+    #info .join-us{
+        font-size: 20px;
+    }
+    #info p {
+        font-size: 15px;
+        padding: 5px 0px;
+    }
+    #CTA {
+        display: flex;
+        justify-content: space-between;
+        margin: 4px;
+        font-size: 13px;
+    }
+    #CTA .box {
+        background-color: #1a3aba;
+        border: 1px solid #0a1e6c;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        justify-content:baseline;
+        text-decoration: none;
+        transition:
+            background-color .5s,
+            box-shadow .5s,
+            transform .3s,
+            border .5s
+        ;
+    }
+    #CTA .box:hover {
+        background-color:#ba2533;
+        border: 1px solid #6d121b;
+        box-shadow: 5px 5px 5px #6d121b;
+        transform: translateY(-4px);
+    }
+    #CTA .box:active {
+        color:#ba2533;
+        background-color: white;
+        border: 1px solid #6d121b;
+        box-shadow: none;
+    }
+}

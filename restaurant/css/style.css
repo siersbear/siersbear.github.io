@@ -246,6 +246,7 @@ ABOUT US
 #slogan {
     font-size: 20px;
     text-align: center;
+    color: #354E88;
 }
 /*****************************************************************************
 MENU
@@ -859,6 +860,7 @@ MEDIA QUERIES
     #slogan {
         font-size: 20px;
         text-align: center;
+        color: #354E88;
     }
     /*****************************************************************************
     MENU
@@ -1368,7 +1370,7 @@ MEDIA QUERIES
     }
     #hero p {
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 3vw;
+        font-size: 4vw;
         margin: 0px 30px;
         color: #354E88;
         text-align: center;
@@ -1486,8 +1488,9 @@ MEDIA QUERIES
         text-align: center;
     }
     #slogan {
-        font-size: 20px;
+        font-size: 10px;
         text-align: center;
+        color: #354E88;
     }
     /*****************************************************************************
     MENU
