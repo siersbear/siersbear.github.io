@@ -23,6 +23,15 @@ HOMEPAGE
     margin: 0px;
     padding: 0px;
 }
+#spacer {
+    margin-top: 8px;
+}
+#spacer img {
+    width: 100%;
+    height: 40vh;
+    object-position: center;
+    object-fit: cover;
+}
 #logo img {
     width: 25vh;
     padding: 10px;
@@ -40,13 +49,13 @@ HOMEPAGE
 #navbar-bottom a:hover{
     text-decoration: underline;
 }
-/*DROPDOWN*/
 #navbar-bottom a {
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     color: #354E88;
 }
+/*DROPDOWN*/
 .dropdown-container {
     position: relative;
 }
@@ -144,12 +153,14 @@ HOMEPAGE
     padding: 25px;
     font-weight: bold;
     transition: 
-        background-color .5s
+        background-color .5s,
+        transform .5s
     ;
 }
 #hero a:hover {
     background-color: #A880B4;
     color: #ECB06E;
+    transform: translateY(-4px);
 }
 /*CARD*/
 #centered-column {
@@ -254,6 +265,10 @@ MENU
 #menu {
     display: flex;
     color: #354E88;
+}
+#menu-items .menu-header {
+    font-size: 50px;
+    margin: 10px;
 }
 #column-list {
     background-color: #A880B4;
@@ -377,7 +392,7 @@ MENU
 }
 #Desserts ul {
     padding: 10px;
-    min-width: 290px;
+    min-width: 130px;
 }
 .dessert-items {
     display: flex;
@@ -394,7 +409,7 @@ MENU
 }
 #Drinks ul {
     padding: 10px;
-    min-width: 290px;
+    min-width: 130px;
 }
 .drink-items {
     display: flex;
@@ -491,11 +506,14 @@ POLICY AND TERMS
     color: #354E88;
 }
 #terms-conditions {
-    margin: 0px 20px;
-    padding-bottom: 40px;
+    margin: 0px 10px;
+    padding-bottom: 20px;
 }
 #terms-conditions h3{
     font-size: 25px;
+}
+#terms li {
+    margin-bottom: 10px;
 }
 #terms p {
     text-align: center;
@@ -536,7 +554,7 @@ CONTACT
     text-align: center;
 }
 #layout {
-    margin: 0px 300px;
+    margin: 0px 100px;
     padding: 50px;
     color: #354E88;
 }
@@ -995,16 +1013,18 @@ MEDIA QUERIES
     }
     #Desserts h2{
         margin: 0px 20px;
+        text-align: left;
     }
     #Desserts ul {
         padding: 10px;
-        min-width: 120px;
+        min-width: 74px;
     }
     .dessert-items {
         display: flex;
         flex-direction: row;
+        text-align: left;
         font-size: 13px;
-        margin: 0px;
+        margin: 0px 26px;
     }
     /*Drinks*/
     #Drinks {
@@ -1013,16 +1033,18 @@ MEDIA QUERIES
     }
     #Drinks h2{
         margin: 0px 20px;
+        text-align: left;
     }
     #Drinks ul {
         padding: 10px;
-        min-width: 105px;
+        min-width: 90px;
     }
     .drink-items {
         display: flex;
         flex-direction: row;
+        text-align: left;
         font-size: 13px;
-        margin: 0px;
+        margin: 0px 10px;
     }
     /*Disclaimer*/
     #view-disclaimer {
@@ -1125,6 +1147,9 @@ MEDIA QUERIES
         text-align: center;
         padding: 80px;
         font-size: 30px;
+    }
+    #terms li {
+        margin-bottom: 10px;
     }
     #terms .thankyou {
         font-size: 20px;
@@ -1512,7 +1537,7 @@ MEDIA QUERIES
         border: 2px solid #354E88;
     }
     #featured .fi {
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 10px;
     }
     #featured .fi-item{
@@ -1520,11 +1545,11 @@ MEDIA QUERIES
         font-size: 20px;
     }
     #featured p{
-        font-size: 15px;
-        margin: 30px 15px;
+        font-size: 10px;
+        margin: 20px 15px;
     }
     .featured-item {
-        width: 350px;
+        width: 300px;
     }
     #menu-items {
         display: flex;
@@ -1550,7 +1575,8 @@ MEDIA QUERIES
     #Breakfast {
         padding: 30px 0px;
         border: 2px solid #354E88;
-        min-width: 70px;
+        min-width: 312px;
+        text-align: center;
     }
     #Breakfast h2{
         margin: 0px 20px;
@@ -1563,13 +1589,15 @@ MEDIA QUERIES
         display: flex;
         flex-direction: row;
         font-size: 13px;
-        margin: 0px;
+        padding: 0px;
+        margin: 10px;
     }
     /*Lunch*/
     #Lunch {
         padding: 30px 0px;
         border: 2px solid #354E88;
-        min-width: 325px;
+        min-width: 343px;
+        text-align: center;
     }
     #Lunch h2{
         margin: 0px 20px;
@@ -1588,7 +1616,8 @@ MEDIA QUERIES
     #Dinner {
         padding: 30px 0px;
         border: 2px solid #354E88;
-        min-width: 70px;
+        min-width: 344px;
+        text-align: center;
     }
     #Dinner h2{
         margin: 0px 20px;
@@ -1607,10 +1636,8 @@ MEDIA QUERIES
     #Desserts {
         padding: 30px 0px;
         border: 2px solid #354E88;
-        min-width: 80px;
-    }
-    #Desserts h2{
-        margin: 0px 20px;
+        min-width: 344px;
+        text-align: center;
     }
     #Desserts ul {
         padding: 10px;
@@ -1626,13 +1653,11 @@ MEDIA QUERIES
     #Drinks {
         padding: 30px 0px;
         border: 2px solid #354E88;
-    }
-    #Drinks h2{
-        margin: 0px 20px;
+        text-align: center;
     }
     #Drinks ul {
         padding: 10px;
-        min-width: 105px;
+        min-width: 130px;
     }
     .drink-items {
         display: flex;
@@ -1742,6 +1767,9 @@ MEDIA QUERIES
         padding: 80px;
         font-size: 20px;
     }
+    #terms li {
+        margin-bottom: 20px;
+    }
     #terms .thankyou {
         font-size: 20px;
     }
@@ -1784,14 +1812,14 @@ MEDIA QUERIES
         color: #354E88;
     }
     #header {
-        font-size: 20px;
+        font-size: 15px;
     }
     #header h1 {
         color:#A880B4;
     }
     form {
         background-color: #ffebd3;
-        padding: 36px;
+        padding: 25px;
         border: 2px solid #354E88;
         border-radius: 2px;
     }
@@ -1804,7 +1832,7 @@ MEDIA QUERIES
     input, 
     select, 
     textarea {
-        padding: 12px;
+        padding: 10px;
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #354E88;
